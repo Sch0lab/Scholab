@@ -1,0 +1,2450 @@
+<!doctype html>
+<html lang="id" class="h-full">
+ <head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20261002-05-536c453","C":{"Abril Fatface":"YACgEZbkUVE,0","Alfa Slab One":"YACgEYS9sJU,0","Anton":"YACgEcYqQ-A,0","Archivo":"YACgEZulLoA,0","Arial Narrow":"YAGyDvJ_4Ts,0","Arial Rounded MT Bold":"YAFcfoaHu-s,0","Arial":"YAGyDvJ_4Ts,0","Avenir Next":"YAFcfmNq6UY,0","Baloo 2":"YADK30bC6HQ,0","Bebas Neue":"YACgESME5ew,0","Bricolage Grotesque":"YAFyMcdwzpc,0","Broken Glyph":"YADZ-exUkv0,0","Canva Sans":"YAFdJjTk5UU,1","Caveat":"YALBs2ploWQ,0","Comic Sans MS":"YAFcfvtOAUY,1","Cormorant Garamond":"YAFdJhX-538,0","Courier New":"YAGzXiGs0_8,0","Courier Prime":"YAD1aFjegN8,0","DM Sans":"YAD1aU3sLnI,0","DM Serif Display":"YAD1aYG82rc,0","Forum":"YACgEcnnqB4,0","Fraunces":"YAFdJpU7Kkk,0","Georgia":"YAGzXkO0pEM,0","Ghost Mono":"YAHQutsX00Q,0","Hanken Grotesk":"YAFcfhwp99E,0","Helvetica Neue":"YAFcf6CtJfI,0","Helvetica":"YAFcf6CtJfI,0","IBM Plex Mono":"YAFdJkmvhGI,0","Impact":"YAFcfnjI7Vk,0","Instrument Serif":"YAHFeOnZNEk,0","Inter":"YAFdJvSyp_k,3","Iowan Old Style":"YAGNIFa8j9o,0","Jacques Francois":"YADK3zbC6RM,0","JetBrains Mono":"YAFdJksXcAk,0","Josefin Sans":"YAFdJjvw9Ps,0","Lato":"YAFdJuFCnaw,0","Libre Baskerville":"YACgEUFdPdA,0","Lobster":"YAD8SnSjSFI,0","Lora":"YACgEXvxf8Q,0","Merriweather":"YACgEXvHxxs,0","Montserrat":"YAFdtQi73Xs,0","Nunito":"YAFdJoNRMmU,1","Oleo Script":"YACgEQQ14jI,0","Oswald":"YACgEQY10lw,0","Pacifico":"YADLjORQ1u4,0","Phantom Sans":"YAFdJvgJ5TU,0","Playfair Display":"YAFdJhem5V8,1","Plus Jakarta Sans":"YAGvf3_u0_Q,0","Poppins":"YAFdJjbTu24,1","Press Start 2P":"YAFyGr-8pmQ,0","Quicksand":"YAFdJpYtCxE,1","Raleway":"YAFdJhmxbVQ,1","Roboto Slab":"YAFdJswIKAg,0","Rockwell":"YAFcfyVZnN0,0","Rye":"YACgEdQP21k,0","Segoe UI":"YAHNdRD1Klw,0","Source Sans 3":"YAG4lO1Mj10,0","Source Serif 4":"YACgEfdj394,0","Space Grotesk":"YADZ-dYEmhg,0","Space Mono":"YADW1-vpsoc,0","Times New Roman":"YAGzXW3gftg,0","Times":"YAGzXW3gftg,0","Trebuchet MS":"YAFcfrglpVA,0","UV Display":"YAEdVfSSpYo,0","UV Sans":"YAFdJvgJ5TU,0","Ubuntu":"YACgERDU--Q,0","Verdana":"YAGzXTctYtQ,0","Work Sans":"YAGXhLOKv44,0","Yellowtail":"YACgEYG4kG4,0","ui-monospace":"YAD1aFjegN8,0","ui-sans-serif":"YACkoD1yZN0,0"}}');</script><script src="/_sdk/6542d56fbfe7a3eb.telemetry_sdk.js" integrity="sha512-ECdM0nK7EkwDuOqho2qxgyRQXyBHk9hZqRKMBr+Xsu6zjeHlt+qkO2N2YRiHN7Kg4e1fEHDhjIp4bGJYVypv1g=="></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SCHOLAB - School Competition Lab</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="/_sdk/10f6beec21a1ad37.element_sdk.js" integrity="sha512-YaX5kozeJyVhyB0OpNRElv0/V2DF7Zpm5GJWBFYWqJQKNtDPyO2t6vy0nxWmlvleVjfaIs3ui37yytaGt4z07w=="></script>
+  <script src="/_sdk/6c2ecc939521f244.data_sdk.js" integrity="sha512-gRx8s+XsZDN6mSIQu2sivLZysbV0WHhb5kXNUWlgVb5lCMU1foJYukyMEDPv8Tnoocb8iwqB4XdRrWc7oEGzIQ=="></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <style>
+    body {
+      box-sizing: border-box;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    
+    h1, h2, h3, h4, h5, h6, .font-heading {
+      font-family: 'Outfit', sans-serif;
+    }
+    
+    :root {
+      --primary: #fbb03b;
+      --secondary: #1A365D;
+      --accent: #00D9A5;
+      --bg-cream: #FFF8F3;
+      --text-dark: #1A202C;
+    }
+    
+    .scrollbar-thin::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    .scrollbar-thin::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    .scrollbar-thin::-webkit-scrollbar-thumb {
+      background: #CBD5E1;
+      border-radius: 3px;
+    }
+    
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-15px); }
+    }
+    
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    @keyframes scaleIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateX(-20px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+    
+    @keyframes pulse-soft {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.7; }
+    }
+    
+    @keyframes gradient-move {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+    
+    .animate-float { animation: float 5s ease-in-out infinite; }
+    .animate-fade-up { animation: fadeUp 0.6s ease-out forwards; }
+    .animate-scale-in { animation: scaleIn 0.4s ease-out forwards; }
+    .animate-slide-in { animation: slideIn 0.5s ease-out forwards; }
+    
+    .gradient-hero {
+      background: linear-gradient(135deg, #1A365D 0%, #2D4A7C 50%, #1A365D 100%);
+      background-size: 200% 200%;
+      animation: gradient-move 8s ease infinite;
+    }
+    
+    .glass-card {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.5);
+    }
+    
+    .card-hover {
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .card-hover:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 25px 50px -12px rgba(26, 54, 93, 0.25);
+    }
+    
+    .btn-primary {
+      background: linear-gradient(135deg, #fbb03b 0%, #f9c36b 100%);
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .btn-primary::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+      transition: left 0.5s ease;
+    }
+    
+    .btn-primary:hover::before {
+      left: 100%;
+    }
+    
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 15px 30px rgba(251, 176, 59, 0.4);
+    }
+    
+    .level-btn {
+      padding: 12px 20px;
+      border-radius: 14px;
+      font-weight: 700;
+      font-size: 14px;
+      transition: all 0.3s ease;
+      border: 3px solid transparent;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    @media (min-width: 640px) {
+      .level-btn {
+        padding: 16px 32px;
+        border-radius: 16px;
+        font-size: 16px;
+      }
+    }
+    
+    .level-btn.active {
+      transform: scale(1.05);
+    }
+    
+    .level-btn:hover:not(.active) {
+      transform: translateY(-4px);
+    }
+    
+    .level-smp {
+      background: linear-gradient(135deg, #3B82F6 0%, #60A5FA 100%);
+      color: white;
+    }
+    .level-smp.active {
+      box-shadow: 0 10px 30px rgba(59, 130, 246, 0.5);
+      border-color: white;
+    }
+    
+    .level-sma {
+      background: linear-gradient(135deg, #10B981 0%, #34D399 100%);
+      color: white;
+    }
+    .level-sma.active {
+      box-shadow: 0 10px 30px rgba(16, 185, 129, 0.5);
+      border-color: white;
+    }
+    
+    .level-mhs {
+      background: linear-gradient(135deg, #8B5CF6 0%, #A78BFA 100%);
+      color: white;
+    }
+    .level-mhs.active {
+      box-shadow: 0 10px 30px rgba(139, 92, 246, 0.5);
+      border-color: white;
+    }
+    
+    .filter-chip {
+      padding: 12px 24px;
+      border-radius: 100px;
+      font-weight: 600;
+      font-size: 14px;
+      transition: all 0.2s ease;
+      cursor: pointer;
+      border: 2px solid #E2E8F0;
+      background: white;
+      color: #64748B;
+    }
+    
+    .filter-chip:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+    
+    .filter-chip.active {
+      background: var(--secondary);
+      border-color: var(--secondary);
+      color: white;
+    }
+    
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+      padding: 4px 10px;
+      border-radius: 100px;
+      font-size: 11px;
+      font-weight: 600;
+      flex-shrink: 0;
+    }
+    
+    @media (min-width: 640px) {
+      .tag {
+        padding: 6px 14px;
+        gap: 4px;
+      }
+    }
+    
+    .tag-level-smp { background: #DBEAFE; color: #1E40AF; }
+    .tag-level-sma { background: #D1FAE5; color: #065F46; }
+    .tag-level-mhs { background: #EDE9FE; color: #5B21B6; }
+    .tag-level-all { background: linear-gradient(135deg, #FEF3C7, #FDE68A); color: #92400E; border: 1px solid #F59E0B; }
+    .tag-academic { background: #FEF3C7; color: #92400E; }
+    .tag-nonacademic { background: #FCE7F3; color: #9D174D; }
+    .tag-volunteer { background: #DBEAFE; color: #1E40AF; }
+    .tag-beasiswa { background: #FEF3C7; color: #92400E; }
+    .tag-free { background: #D1FAE5; color: #065F46; }
+    .tag-paid { background: #FEE2E2; color: #991B1B; }
+    
+    .modal-backdrop {
+      backdrop-filter: blur(8px);
+      background: rgba(0, 0, 0, 0.6);
+    }
+    
+    .modal-content {
+      animation: scaleIn 0.3s ease-out;
+    }
+    
+    .input-field {
+      width: 100%;
+      padding: 12px 16px;
+      border-radius: 12px;
+      border: 2px solid #E2E8F0;
+      font-size: 14px;
+      transition: all 0.2s ease;
+      background: white;
+    }
+    
+    @media (min-width: 640px) {
+      .input-field {
+        padding: 16px 20px;
+        border-radius: 14px;
+        font-size: 16px;
+      }
+    }
+    
+    .input-field:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 4px rgba(251, 176, 59, 0.1);
+    }
+    
+    .deadline-urgent {
+      animation: pulse-soft 2s ease-in-out infinite;
+    }
+    
+    .empty-illustration {
+      width: 200px;
+      height: 200px;
+      background: linear-gradient(135deg, #F1F5F9 0%, #E2E8F0 100%);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .toast {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: var(--secondary);
+      color: white;
+      padding: 16px 24px;
+      border-radius: 16px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+      z-index: 100;
+      animation: slideIn 0.4s ease-out;
+    }
+    
+    .admin-section {
+      background: linear-gradient(135deg, #1E293B 0%, #334155 100%);
+      border-top: 4px solid var(--primary);
+    }
+    
+    .poster-placeholder {
+      background: linear-gradient(135deg, #E2E8F0 0%, #CBD5E0 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .insight-card {
+      background: linear-gradient(135deg, #FFF8F3 0%, #FEF3C7 100%);
+      border-left: 4px solid var(--primary);
+    }
+    
+    .tab-btn {
+      padding: 12px 24px;
+      font-weight: 600;
+      border-bottom: 3px solid transparent;
+      transition: all 0.2s ease;
+      color: #64748B;
+    }
+    
+    .tab-btn.active {
+      color: var(--primary);
+      border-bottom-color: var(--primary);
+    }
+    
+    .tab-btn:hover:not(.active) {
+      color: var(--secondary);
+    }
+  </style>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js" type="text/javascript"></script>
+  <script src="https://cdn.tailwindcss.com/3.4.17" type="text/javascript"></script>
+ </head>
+ <body class="h-full bg-[#FFF8F3] text-gray-800">
+  <div id="app" class="h-full w-full overflow-auto scrollbar-thin"><!-- LOGIN PAGE -->
+   <div id="page-login" class="min-h-full">
+    <div class="gradient-hero min-h-full flex items-center justify-center px-4 py-12">
+     <div class="w-full max-w-md">
+      <div class="text-center mb-10 animate-fade-up flex flex-col items-center">
+       <div class="w-24 h-24 rounded-3xl shadow-2xl mb-6 animate-float overflow-hidden"><img src="https://iili.io/fjZcuea.png" alt="SCHOLAB Logo" class="w-full h-full object-contain" onerror="this.style.display='none'">
+       </div>
+       <h1 class="font-heading text-4xl font-extrabold text-white mb-3">SCHOLAB</h1>
+       <p class="text-white/70 text-lg">School Competition Lab</p>
+      </div>
+      <div class="glass-card rounded-3xl p-8 shadow-2xl animate-fade-up" style="animation-delay: 0.1s">
+       <h2 class="font-heading text-2xl font-bold text-[#1A365D] text-center mb-2">Selamat Datang! 👋</h2>
+       <p class="text-gray-500 text-center mb-8">Masukkan data dirimu untuk melanjutkan</p>
+       <form id="login-form" onsubmit="handleLogin(event)">
+        <div class="mb-5"><label for="user-name" class="block text-sm font-semibold text-[#1A365D] mb-2">Nama Lengkap</label> <input type="text" id="user-name" required class="input-field" placeholder="Contoh: Ahmad Rizky Pratama">
+        </div>
+        <div class="mb-5"><label for="user-school-type" class="block text-sm font-semibold text-[#1A365D] mb-2">Jenjang Pendidikan *</label> <select id="user-school-type" required class="input-field bg-white"> <option value="">Pilih jenjang pendidikan</option> <option value="SMP">📘 SMP</option> <option value="SMA">📗 SMA/SMK</option> <option value="Universitas">🎓 Universitas</option> </select>
+        </div>
+        <div class="mb-8"><label for="user-school" class="block text-sm font-semibold text-[#1A365D] mb-2">Asal Sekolah / Universitas</label> <input type="text" id="user-school" required class="input-field" placeholder="Contoh: SMAN 1 Jakarta atau Universitas Indonesia" oninput="validateSchoolName(this)">
+         <p id="school-error" class="text-red-500 text-xs mt-1 hidden">⚠️ Nama harus sesuai dengan jenjang yang dipilih</p>
+        </div><button type="submit" id="login-btn" class="btn-primary w-full py-4 rounded-xl text-[#1A365D] font-bold text-lg shadow-lg"> Masuk ke SCHOLAB 🚀 </button>
+       </form>
+       <p class="text-center text-gray-400 text-sm mt-6">Data kamu aman dan hanya digunakan untuk menyimpan lomba dan webinar favoritmu</p>
+      </div>
+      <div class="flex justify-center gap-4 mt-10 animate-fade-up" style="animation-delay: 0.2s">
+       <div class="w-3 h-3 bg-[#fbb03b] rounded-full"></div>
+       <div class="w-3 h-3 bg-[#00D9A5] rounded-full"></div>
+       <div class="w-3 h-3 bg-white/50 rounded-full"></div>
+      </div>
+     </div>
+    </div>
+   </div><!-- MAIN APP -->
+   <div id="page-main" class="hidden"><!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-lg shadow-lg border-b border-gray-100">
+     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+       <div class="flex items-center gap-3">
+        <div class="w-12 h-12 rounded-2xl shadow-lg overflow-hidden"><img src="https://iili.io/fjZcuea.png" alt="SCHOLAB" class="w-full h-full object-contain" onerror="this.style.display='none'">
+        </div>
+        <div class="hidden sm:block"><span class="font-heading font-bold text-xl text-[#1A365D]">SCHOLAB</span> <span class="text-gray-400 text-xs block">School Competition Lab</span>
+        </div>
+       </div><!-- Main Tabs -->
+       <div class="hidden md:flex items-center gap-1 bg-gray-100 rounded-xl p-1"><button onclick="showMainTab('competitions')" id="main-tab-comp" class="px-5 py-2.5 rounded-lg font-semibold text-sm transition-all bg-white text-[#1A365D] shadow-sm">🏆 Lomba</button> <button onclick="showMainTab('mentoring')" id="main-tab-mentoring" class="px-5 py-2.5 rounded-lg font-semibold text-sm transition-all text-gray-500 hover:text-[#1A365D]">🎓 Mentoring Juara</button> <button onclick="showMainTab('achievements')" id="main-tab-achievements" class="px-5 py-2.5 rounded-lg font-semibold text-sm transition-all text-gray-500 hover:text-[#1A365D]">🏅 Laporkan Prestasi</button>
+       </div>
+       <div class="flex items-center gap-4"><button onclick="showMyBookmarks()" class="relative p-3 hover:bg-gray-100 rounded-xl transition-colors group" title="Lomba Tersimpan">
+         <svg class="w-6 h-6 text-[#1A365D] group-hover:text-[#fbb03b] transition-colors" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
+         </svg><span id="my-bookmark-count" class="absolute -top-1 -right-1 min-w-[22px] h-[22px] bg-[#fbb03b] text-[#1A365D] text-xs font-bold rounded-full flex items-center justify-center hidden shadow-lg">0</span> </button>
+        <div class="hidden sm:flex items-center gap-3 bg-gray-50 rounded-2xl px-4 py-2">
+         <div class="w-10 h-10 bg-gradient-to-br from-[#1A365D] to-[#2D4A7C] rounded-xl flex items-center justify-center text-white font-bold text-sm" id="user-avatar">
+          A
+         </div>
+         <div class="hidden md:block">
+          <div id="display-user-name" class="font-semibold text-[#1A365D] text-sm">
+           User
+          </div>
+          <div id="display-user-school" class="text-gray-400 text-xs truncate max-w-[150px]">
+           Sekolah
+          </div>
+         </div>
+        </div><button onclick="handleLogout()" class="p-3 hover:bg-red-50 rounded-xl transition-colors group" title="Keluar">
+         <svg class="w-5 h-5 text-gray-400 group-hover:text-red-500 transition-colors" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+         </svg></button>
+       </div>
+      </div><!-- Mobile Tabs -->
+      <div class="md:hidden flex items-center gap-1 bg-gray-100 rounded-xl p-1 mb-4"><button onclick="showMainTab('competitions')" id="main-tab-comp-m" class="flex-1 px-4 py-2.5 rounded-lg font-semibold text-sm transition-all bg-white text-[#1A365D] shadow-sm">🏆 Lomba</button> <button onclick="showMainTab('mentoring')" id="main-tab-mentoring-m" class="flex-1 px-4 py-2.5 rounded-lg font-semibold text-sm transition-all text-gray-500">🎓 Mentoring</button> <button onclick="showMainTab('achievements')" id="main-tab-achievements-m" class="flex-1 px-4 py-2.5 rounded-lg font-semibold text-sm transition-all text-gray-500">🏅 Prestasi</button>
+      </div>
+     </div>
+    </nav><!-- COMPETITIONS TAB -->
+    <div id="tab-competitions"><!-- Hero Section -->
+     <section class="gradient-hero text-white py-16 px-4 relative overflow-hidden">
+      <div class="absolute inset-0 overflow-hidden pointer-events-none">
+       <div class="absolute w-72 h-72 bg-[#fbb03b]/20 rounded-full -top-20 -right-20 animate-float"></div>
+       <div class="absolute w-48 h-48 bg-white/10 rounded-full bottom-0 left-10 animate-float" style="animation-delay: 1s"></div>
+      </div>
+      <div class="max-w-6xl mx-auto relative z-10">
+       <div class="text-center mb-12 animate-fade-up">
+        <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-5 py-2.5 rounded-full mb-6 border border-white/20"><span class="relative flex h-2.5 w-2.5"> <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00D9A5] opacity-75"></span> <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#00D9A5]"></span> </span> <span class="text-sm font-medium">Platform Lomba Terlengkap</span>
+        </div>
+        <h1 id="hero-title" class="font-heading text-4xl sm:text-5xl md:text-6xl font-extrabold mb-4 leading-tight">Temukan Lomba <span class="text-[#fbb03b]">Impianmu!</span></h1>
+        <p id="hero-subtitle" class="text-lg md:text-xl text-white/80 max-w-2xl mx-auto mb-10">Jelajahi kompetisi akademik &amp; non-akademik untuk pelajar dan mahasiswa se-Indonesia</p>
+        <div class="max-w-xl mx-auto relative"><input type="text" id="search-input" placeholder="Cari nama lomba..." class="w-full px-6 py-5 pl-14 rounded-2xl text-gray-800 text-lg shadow-2xl focus:outline-none focus:ring-4 focus:ring-[#fbb03b]/30 border-2 border-transparent focus:border-[#fbb03b] transition-all" oninput="handleSearch(this.value)">
+         <svg class="absolute left-5 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+         </svg>
+        </div>
+       </div>
+       <div class="animate-fade-up" style="animation-delay: 0.1s">
+        <p class="text-center text-white/60 text-sm font-medium mb-5 uppercase tracking-wider">Pilih Jenjang Pendidikan</p>
+        <div class="flex flex-wrap justify-center gap-4"><button onclick="selectLevel('SMP')" id="btn-smp" class="level-btn level-smp flex items-center gap-3"> <span class="text-2xl">📘</span> <span>SMP</span> </button> <button onclick="selectLevel('SMA/Sederajat')" id="btn-sma" class="level-btn level-sma flex items-center gap-3"> <span class="text-2xl">📗</span> <span>SMA/Sederajat</span> </button> <button onclick="selectLevel('Mahasiswa')" id="btn-mhs" class="level-btn level-mhs flex items-center gap-3"> <span class="text-2xl">🎓</span> <span>Mahasiswa</span> </button>
+        </div>
+       </div>
+      </div>
+     </section><!-- Filters Section -->
+     <section class="bg-white py-3 sm:py-4 px-3 sm:px-4 border-b border-gray-100 sticky top-20 z-40 shadow-sm">
+      <div class="max-w-7xl mx-auto">
+       <div class="flex items-center justify-center gap-2 sm:gap-3">
+        <div class="flex items-center gap-1.5 sm:gap-2 flex-1 sm:flex-none"><label for="filter-category" class="text-gray-500 text-xs sm:text-sm font-medium whitespace-nowrap hidden sm:block">Bidang:</label> <select id="filter-category" onchange="filterCategory(this.value)" class="input-field py-2 sm:py-2.5 px-2 sm:px-4 text-xs sm:text-sm font-medium w-full sm:w-auto sm:min-w-[160px]"> <option value="all">📋 Semua</option> <option value="Akademik">📚 Akademik</option> <option value="Non-Akademik">🎨 Non-Akademik</option> <option value="Organisasi &amp; Volunteer">🤝 Organisasi</option> <option value="Beasiswa">🎓 Beasiswa</option> </select>
+        </div>
+        <div class="flex items-center gap-1.5 sm:gap-2 flex-1 sm:flex-none"><label for="filter-price" class="text-gray-500 text-xs sm:text-sm font-medium whitespace-nowrap hidden sm:block">Biaya:</label> <select id="filter-price" onchange="filterPrice(this.value)" class="input-field py-2 sm:py-2.5 px-2 sm:px-4 text-xs sm:text-sm font-medium w-full sm:w-auto sm:min-w-[120px]"> <option value="all">💰 Semua</option> <option value="free">🆓 Gratis</option> <option value="paid">💎 Berbayar</option> </select>
+        </div><button onclick="resetFilters()" class="p-2 sm:p-2.5 hover:bg-gray-100 rounded-lg sm:rounded-xl transition-colors border-2 border-gray-200 hover:border-gray-300 flex-shrink-0" title="Reset Filter">
+         <svg class="w-4 h-4 sm:w-5 sm:h-5 text-gray-500" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+         </svg></button>
+       </div>
+      </div>
+     </section><!-- Competitions Grid -->
+     <section class="py-12 px-4 bg-[#FFF8F3]" id="competitions-section">
+      <div class="max-w-7xl mx-auto">
+       <div class="flex items-center justify-between mb-8">
+        <h2 class="font-heading text-2xl md:text-3xl font-bold text-[#1A365D] flex items-center gap-3"><span class="w-1.5 h-8 bg-gradient-to-b from-[#fbb03b] to-[#1A365D] rounded-full"></span> <span id="section-title">Semua Lomba</span></h2><span id="competition-count" class="text-gray-500 font-medium bg-white px-4 py-2 rounded-full text-sm shadow-sm">0 lomba</span>
+       </div>
+       <div id="competitions-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+       </div>
+       <div id="competitions-empty" class="hidden text-center py-16">
+        <div class="empty-illustration mx-auto mb-6">
+         <svg class="w-24 h-24 text-gray-300" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+         </svg>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-700 mb-2">Tidak ada lomba ditemukan</h3>
+        <p class="text-gray-500 mb-6">Coba ubah filter atau kata kunci pencarian</p><button onclick="resetFilters()" class="btn-primary px-6 py-3 rounded-xl text-[#1A365D] font-bold"> Reset Filter </button>
+       </div>
+      </div>
+     </section><!-- My Bookmarks Section -->
+     <section id="my-bookmarks-section" class="py-12 px-4 bg-[#FFF8F3] hidden">
+      <div class="max-w-7xl mx-auto">
+       <div class="flex items-center gap-4 mb-8"><button onclick="hideMyBookmarks()" class="p-3 bg-white hover:bg-gray-50 rounded-xl transition-colors shadow-sm">
+         <svg class="w-5 h-5 text-[#1A365D]" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+         </svg></button>
+        <h2 class="font-heading text-2xl md:text-3xl font-bold text-[#1A365D] flex items-center gap-3"><span class="w-1.5 h-8 bg-gradient-to-b from-[#fbb03b] to-[#1A365D] rounded-full"></span> Lomba Tersimpan Saya 📌</h2>
+       </div>
+       <div id="my-bookmarks-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+       </div>
+       <div id="my-bookmarks-empty" class="hidden text-center py-16">
+        <div class="empty-illustration mx-auto mb-6">
+         <svg class="w-24 h-24 text-gray-300" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
+         </svg>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-700 mb-2">Belum ada lomba tersimpan</h3>
+        <p class="text-gray-500 mb-6">Simpan lomba favoritmu dengan menekan tombol bookmark!</p><button onclick="hideMyBookmarks()" class="btn-primary px-6 py-3 rounded-xl text-[#1A365D] font-bold"> Jelajahi Lomba </button>
+       </div>
+      </div>
+     </section>
+    </div><!-- WEBINARS TAB -->
+    <div id="tab-webinars" class="hidden"><!-- Webinar Section -->
+     <section class="py-12 px-4 bg-[#FFF8F3]" id="webinars-section">
+      <div class="max-w-7xl mx-auto">
+       <div class="flex items-center justify-between mb-8">
+        <h2 class="font-heading text-2xl md:text-3xl font-bold text-[#1A365D] flex items-center gap-3"><span class="w-1.5 h-8 bg-gradient-to-b from-[#fbb03b] to-[#1A365D] rounded-full"></span> <span id="webinar-section-title">Semua Webinar</span></h2><span id="webinar-count" class="text-gray-500 font-medium bg-white px-4 py-2 rounded-full text-sm shadow-sm">0 webinar</span>
+       </div>
+       <div id="webinars-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+       </div>
+       <div id="webinars-empty" class="hidden text-center py-16">
+        <div class="empty-illustration mx-auto mb-6">
+         <svg class="w-24 h-24 text-gray-300" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+         </svg>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-700 mb-2">Tidak ada webinar</h3>
+        <p class="text-gray-500">Webinar akan segera dimulai. Nantikan update terbaru!</p>
+       </div>
+      </div>
+     </section>
+    </div>
+    <div id="tab-mentoring" class="hidden">
+     <section class="py-12 px-4 bg-[#FFF8F3]" id="mentoring-section">
+      <div class="max-w-7xl mx-auto">
+       <div class="text-center mb-10"><span class="inline-flex items-center gap-2 bg-[#fbb03b]/10 px-5 py-2.5 rounded-full mb-4 text-sm font-semibold text-[#1A365D]">🎓 Belajar dari yang Terbaik</span>
+        <h2 class="font-heading text-3xl font-bold text-[#1A365D] mb-3">Mentoring Juara</h2>
+        <p class="text-gray-500 max-w-xl mx-auto">Ikuti sesi eksklusif bersama mentor berprestasi dan raih strategi terbaikmu.</p>
+       </div>
+       <div id="mentoring-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+       <div id="mentoring-empty" class="hidden text-center py-16">
+        <div class="empty-illustration mx-auto mb-6 text-6xl">
+         🎓
+        </div>
+        <h3 class="text-xl font-semibold text-gray-700 mb-2">Belum ada sesi mentoring</h3>
+        <p class="text-gray-500">Sesi baru akan segera dipublikasikan.</p>
+       </div>
+      </div>
+     </section>
+    </div>
+    <div id="tab-insights" class="hidden">
+     <section class="py-12 px-4 bg-[#FFF8F3] min-h-[60%]">
+      <div class="max-w-4xl mx-auto">
+       <div class="text-center mb-12">
+        <div class="inline-flex items-center gap-2 bg-[#fbb03b]/10 px-5 py-2.5 rounded-full mb-6"><span class="text-2xl">💡</span> <span class="text-sm font-semibold text-[#1A365D]">Tips &amp; Trick Belajar</span>
+        </div>
+        <h2 class="font-heading text-3xl md:text-4xl font-bold text-[#1A365D] mb-4">Insightful</h2>
+        <p class="text-gray-500 max-w-xl mx-auto">Kumpulan tips, trick, dan panduan untuk membantumu sukses di berbagai kompetisi!</p>
+       </div>
+       <div id="insights-list" class="space-y-6">
+       </div>
+       <div id="insights-empty" class="hidden text-center py-16">
+        <div class="empty-illustration mx-auto mb-6">
+         <svg class="w-24 h-24 text-gray-300" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+         </svg>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-700 mb-2">Belum ada insight</h3>
+        <p class="text-gray-500">Insight akan segera ditambahkan oleh admin!</p>
+       </div>
+      </div>
+     </section>
+    </div>
+    <section id="tab-achievements" class="py-12 px-4 bg-white hidden">
+     <div class="max-w-3xl mx-auto bg-[#FFF8F3] rounded-3xl p-6 md:p-8 shadow-lg border border-orange-100">
+      <div class="text-center mb-6"><span class="text-3xl">🏅</span>
+       <h2 class="font-heading text-2xl font-bold text-[#1A365D] mt-2">Laporkan Prestasimu</h2>
+       <p class="text-gray-500 mt-2">Bagikan pencapaianmu kepada SCHOLAB untuk dicatat dan diapresiasi.</p>
+      </div>
+      <form id="achievement-form" onsubmit="handleAchievementSubmit(event)" class="space-y-4">
+       <div><label for="achievement-name" class="block text-sm font-semibold text-[#1A365D] mb-2">Nama Prestasi *</label><input id="achievement-name" required class="input-field" placeholder="Contoh: Juara 1 Olimpiade Sains Nasional">
+       </div>
+       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div><label for="achievement-category" class="block text-sm font-semibold text-[#1A365D] mb-2">Kategori *</label><input id="achievement-category" required class="input-field" placeholder="Akademik, olahraga, seni...">
+        </div>
+        <div><label for="achievement-level" class="block text-sm font-semibold text-[#1A365D] mb-2">Tingkat *</label><input id="achievement-level" required class="input-field" placeholder="Sekolah / Nasional">
+        </div>
+       </div>
+       <div><label for="achievement-description" class="block text-sm font-semibold text-[#1A365D] mb-2">Ceritakan singkat *</label><textarea id="achievement-description" required rows="3" class="input-field resize-none" placeholder="Jelaskan prestasimu..."></textarea>
+       </div>
+       <div><label for="achievement-document-link" class="block text-sm font-semibold text-[#1A365D] mb-2">Link Drive Dokumentasi *</label><input type="url" id="achievement-document-link" required class="input-field" placeholder="https://drive.google.com/... ">
+        <p class="text-xs text-gray-400 mt-1">Pastikan akses file diatur agar dapat dilihat oleh SCHOLAB.</p>
+       </div><button id="achievement-submit-btn" type="submit" class="btn-primary w-full py-4 rounded-xl text-[#1A365D] font-bold">Kirim Prestasi 🏆</button>
+      </form>
+     </div>
+    </section><!-- Admin Section -->
+    <footer class="admin-section text-white py-12 px-4">
+     <div class="max-w-4xl mx-auto text-center">
+      <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+       <div class="flex items-center justify-center gap-3 mb-4">
+        <svg class="w-8 h-8 text-[#fbb03b]" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+        </svg>
+        <h3 class="font-heading text-xl font-bold">Admin Panel</h3>
+       </div>
+       <p class="text-white/60 mb-6 text-sm leading-relaxed"><strong>Perhatian:</strong> Admin Panel hanya dapat diakses oleh administrator SCHOLAB.<br>
+         Pengguna biasa <strong>tidak memiliki akses</strong> ke fitur ini dan tidak dapat menggunakannya.</p><button onclick="openAdminLogin()" class="bg-[#fbb03b] hover:bg-[#e9a235] px-8 py-3 rounded-xl font-bold transition-colors inline-flex items-center gap-2 text-[#1A365D]">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" /> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+        </svg> Masuk sebagai Admin </button>
+      </div>
+      <div class="mt-10 pt-8 border-t border-white/10">
+       <p class="text-white/40 text-sm">SCHOLAB © 2024 • Platform Eksplorasi Lomba Pelajar Indonesia</p>
+      </div>
+     </div>
+    </footer>
+   </div><!-- Detail Modal -->
+   <div id="detail-modal" class="fixed inset-0 z-50 hidden">
+    <div class="modal-backdrop absolute inset-0" onclick="closeDetailModal()"></div>
+    <div class="absolute inset-4 md:inset-auto md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:w-full md:max-w-2xl md:max-h-[85%] overflow-auto">
+     <div class="modal-content bg-white rounded-3xl shadow-2xl" id="detail-content">
+     </div>
+    </div>
+   </div><!-- Admin Login Modal -->
+   <div id="admin-login-modal" class="fixed inset-0 z-50 hidden">
+    <div class="modal-backdrop absolute inset-0" onclick="closeAdminLogin()"></div>
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-md p-4">
+     <div class="modal-content bg-white rounded-3xl shadow-2xl p-8">
+      <div class="text-center mb-8">
+       <div class="w-20 h-20 bg-gradient-to-br from-[#1A365D] to-[#2D4A7C] rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+        <svg class="w-10 h-10 text-[#fbb03b]" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+        </svg>
+       </div>
+       <h3 class="font-heading text-2xl font-bold text-[#1A365D]">Admin Panel</h3>
+       <p class="text-gray-500 mt-2">Masukkan password administrator</p>
+      </div>
+      <form onsubmit="handleAdminLogin(event)">
+       <div class="mb-6"><label for="admin-password" class="block text-sm font-semibold text-[#1A365D] mb-2">Password Admin</label> <input type="password" id="admin-password" required class="input-field text-center text-xl tracking-widest" placeholder="••••••">
+        <p id="admin-login-error" class="text-red-500 text-sm mt-2 hidden">Password salah! Akses ditolak.</p>
+       </div>
+       <div class="flex gap-4"><button type="button" onclick="closeAdminLogin()" class="flex-1 px-6 py-4 rounded-xl border-2 border-gray-200 text-gray-700 font-semibold hover:bg-gray-50 transition-colors"> Batal </button> <button type="submit" class="flex-1 bg-[#1A365D] hover:bg-[#2D4A7C] px-6 py-4 rounded-xl text-white font-bold transition-colors"> Masuk </button>
+       </div>
+      </form>
+     </div>
+    </div>
+   </div><!-- Admin Panel Modal -->
+   <div id="admin-panel-modal" class="fixed inset-0 z-50 hidden">
+    <div class="modal-backdrop absolute inset-0" onclick="closeAdminPanel()"></div>
+    <div class="absolute inset-4 md:inset-auto md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:w-full md:max-w-5xl max-h-[90%] overflow-auto">
+     <div class="modal-content bg-white rounded-3xl shadow-2xl">
+      <div class="sticky top-0 bg-gradient-to-r from-[#1A365D] to-[#2D4A7C] px-8 py-5 flex items-center justify-between rounded-t-3xl z-10">
+       <div class="flex items-center gap-3">
+        <div class="w-10 h-10 bg-[#fbb03b] rounded-xl flex items-center justify-center">
+         <svg class="w-5 h-5 text-[#1A365D]" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" /> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+         </svg>
+        </div>
+        <div>
+         <h3 class="font-heading text-xl font-bold text-white">Admin Panel</h3>
+         <p class="text-white/60 text-sm">Kelola SCHOLAB</p>
+        </div>
+       </div><button onclick="closeAdminPanel()" class="p-2 hover:bg-white/10 rounded-xl transition-colors">
+        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg></button>
+      </div><!-- Admin Tabs -->
+      <div class="border-b border-gray-200 px-6">
+       <div class="flex gap-1 overflow-x-auto"><button onclick="showAdminTab('competitions')" id="admin-tab-comp" class="tab-btn active">🏆 Daftar Lomba</button> <button onclick="showAdminTab('add-comp')" id="admin-tab-add" class="tab-btn">➕ Tambah Lomba</button> <button onclick="showAdminTab('mentoring')" id="admin-tab-mentoring" class="tab-btn">🎓 Daftar Mentoring</button> <button onclick="showAdminTab('add-mentoring')" id="admin-tab-add-mentoring" class="tab-btn">➕ Tambah Mentoring</button> <button onclick="showAdminTab('users')" id="admin-tab-users" class="tab-btn">👥 Daftar User</button> <button onclick="showAdminTab('achievements')" id="admin-tab-achievements" class="tab-btn">🏅 Laporan Prestasi</button>
+       </div>
+      </div>
+      <div id="admin-achievements-list" class="p-6 hidden">
+       <div class="flex items-center justify-between mb-6">
+        <h4 class="font-heading text-xl font-bold text-[#1A365D]">Laporan Prestasi Masuk</h4><span id="admin-achievement-count" class="bg-[#fbb03b] text-[#1A365D] px-3 py-1 rounded-full text-sm font-bold">0</span>
+       </div>
+       <div id="admin-achievements-grid" class="space-y-3"></div>
+       <div id="admin-achievements-empty" class="hidden text-center py-12 text-gray-500">
+        Belum ada laporan prestasi.
+       </div>
+      </div><!-- Admin: Competition List -->
+      <div id="admin-comp-list" class="p-6">
+       <div class="mb-6 flex items-center justify-between flex-wrap gap-4">
+        <div class="flex items-center gap-3"><span class="text-gray-500">Total Lomba:</span> <span id="admin-total-count" class="bg-[#1A365D] text-white px-3 py-1 rounded-full text-sm font-bold">0</span>
+        </div><input type="text" id="admin-search" placeholder="Cari lomba..." class="input-field max-w-xs" oninput="filterAdminList(this.value)">
+       </div>
+       <div id="admin-competitions-list" class="space-y-3 max-h-[50%] overflow-auto scrollbar-thin">
+       </div>
+       <div id="admin-list-empty" class="hidden text-center py-12 text-gray-500">
+        <p class="text-lg mb-2">Belum ada lomba</p><button onclick="showAdminTab('add-comp')" class="text-[#fbb03b] font-semibold hover:underline">+ Tambah Lomba Pertama</button>
+       </div>
+      </div><!-- Admin: Add/Edit Competition -->
+      <div id="admin-add-comp" class="p-6 hidden">
+       <form id="admin-form" class="space-y-5" onsubmit="handleAdminSubmit(event)"><input type="hidden" id="admin-edit-id" value="">
+        <div><label for="admin-comp-name" class="block text-sm font-semibold text-[#1A365D] mb-2">Nama Lomba *</label> <input type="text" id="admin-comp-name" required class="input-field" placeholder="Contoh: Olimpiade Sains Nasional 2024">
+        </div>
+        <div><label for="admin-comp-poster" class="block text-sm font-semibold text-[#1A365D] mb-2">URL Poster Lomba</label> <input type="text" id="admin-comp-poster" class="input-field" placeholder="https://drive.google.com/file/d/... atau link gambar langsung" oninput="previewPoster(this.value)">
+         <p class="text-xs text-gray-400 mt-1">💡 Bisa pakai link Google Drive atau URL gambar langsung (opsional)</p>
+         <div id="poster-preview-container" class="mt-3 hidden">
+          <p class="text-xs text-gray-500 mb-2">Preview:</p>
+          <div class="relative inline-block"><img id="poster-preview" src="" alt="Preview" class="max-h-32 rounded-lg border-2 border-gray-200" onerror="handlePosterError()">
+           <div id="poster-error" class="hidden bg-red-50 border border-red-200 text-red-600 text-xs p-2 rounded-lg mt-2">
+            ⚠️ Gambar tidak bisa dimuat. Pastikan link valid dan bisa diakses publik.
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+         <div><label for="admin-comp-level" class="block text-sm font-semibold text-[#1A365D] mb-2">Jenjang *</label> <select id="admin-comp-level" required class="input-field bg-white"> <option value="">Pilih jenjang</option> <option value="Semua Jenjang">🎯 Semua Jenjang</option> <option value="SMP">SMP</option> <option value="SMA/Sederajat">SMA/Sederajat</option> <option value="Mahasiswa">Mahasiswa</option> </select>
+         </div>
+         <div><label for="admin-comp-category" class="block text-sm font-semibold text-[#1A365D] mb-2">Bidang *</label> <select id="admin-comp-category" required class="input-field bg-white"> <option value="">Pilih bidang</option> <option value="Akademik">📚 Akademik</option> <option value="Non-Akademik">🎨 Non-Akademik</option> <option value="Organisasi &amp; Volunteer">🤝 Organisasi &amp; Volunteer</option> <option value="Beasiswa">🎓 Beasiswa</option> </select>
+         </div>
+         <div><label for="admin-comp-tier" class="block text-sm font-semibold text-[#1A365D] mb-2">Tingkat *</label> <select id="admin-comp-tier" required class="input-field bg-white"> <option value="">Pilih tingkat</option> <option value="Sekolah">Sekolah</option> <option value="Kota/Kabupaten">Kota/Kabupaten</option> <option value="Provinsi">Provinsi</option> <option value="Nasional">Nasional</option> <option value="Internasional">Internasional</option> </select>
+         </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+         <div><label for="admin-comp-deadline" class="block text-sm font-semibold text-[#1A365D] mb-2">Deadline *</label> <input type="date" id="admin-comp-deadline" required class="input-field">
+         </div>
+         <div><label class="block text-sm font-semibold text-[#1A365D] mb-2">Biaya Pendaftaran *</label>
+          <div class="flex gap-4"><label class="flex items-center gap-2 cursor-pointer"> <input type="radio" name="comp-fee" id="admin-comp-free" value="free" checked class="w-5 h-5 text-[#fbb03b]"> <span class="font-medium">Gratis</span> </label> <label class="flex items-center gap-2 cursor-pointer"> <input type="radio" name="comp-fee" id="admin-comp-paid" value="paid" class="w-5 h-5 text-[#fbb03b]"> <span class="font-medium">Berbayar</span> </label>
+          </div>
+         </div>
+        </div>
+        <div><label for="admin-comp-description" class="block text-sm font-semibold text-[#1A365D] mb-2">Deskripsi <span class="text-gray-400 font-normal">(opsional)</span></label> <textarea id="admin-comp-description" rows="3" class="input-field resize-none" placeholder="Jelaskan tentang lomba ini..."></textarea>
+        </div>
+        <div><label for="admin-comp-requirements" class="block text-sm font-semibold text-[#1A365D] mb-2">Syarat Peserta <span class="text-gray-400 font-normal">(opsional)</span></label> <textarea id="admin-comp-requirements" rows="2" class="input-field resize-none" placeholder="Contoh: Siswa SMA/SMK aktif, tim 2-3 orang"></textarea>
+        </div>
+        <div><label for="admin-comp-prizes" class="block text-sm font-semibold text-[#1A365D] mb-2">Hadiah</label> <input type="text" id="admin-comp-prizes" class="input-field" placeholder="Contoh: Juara 1: Rp 10.000.000">
+        </div>
+        <div><label for="admin-comp-link" class="block text-sm font-semibold text-[#1A365D] mb-2">Link Pendaftaran *</label> <input type="url" id="admin-comp-link" required class="input-field" placeholder="https://...">
+        </div>
+        <div><label for="admin-comp-guidebook" class="block text-sm font-semibold text-[#1A365D] mb-2">Link Guidebook <span class="text-gray-400 font-normal">(opsional)</span></label> <input type="url" id="admin-comp-guidebook" class="input-field" placeholder="https://drive.google.com/... atau link lainnya">
+         <p class="text-xs text-gray-400 mt-1">Link ke PDF atau dokumen guidebook lomba</p>
+        </div><label class="flex items-center gap-3 p-4 bg-amber-50 rounded-xl cursor-pointer hover:bg-amber-100 transition-colors"> <input type="checkbox" id="admin-comp-featured" class="w-6 h-6 rounded-lg border-2 border-amber-300 text-amber-500 focus:ring-amber-500"> <span class="text-gray-700 font-medium">⭐ Tandai sebagai Featured</span> </label>
+        <div class="flex gap-4 pt-4"><button type="button" onclick="resetAdminForm()" class="flex-1 px-6 py-4 rounded-xl border-2 border-gray-200 text-gray-700 font-semibold hover:bg-gray-50 transition-colors"> Reset </button> <button type="submit" id="admin-submit-btn" class="flex-1 btn-primary px-6 py-4 rounded-xl text-[#1A365D] font-bold"> Simpan Lomba </button>
+        </div>
+       </form>
+      </div><!-- Admin: Webinar List -->
+      <div id="admin-webinar-list" class="p-6 hidden">
+       <div class="mb-6 flex items-center justify-between flex-wrap gap-4">
+        <div class="flex items-center gap-3"><span class="text-gray-500">Total Webinar:</span> <span id="admin-webinar-count" class="bg-[#1A365D] text-white px-3 py-1 rounded-full text-sm font-bold">0</span>
+        </div><input type="text" id="admin-webinar-search" placeholder="Cari webinar..." class="input-field max-w-xs" oninput="filterAdminWebinarList(this.value)">
+       </div>
+       <div id="admin-webinars-list" class="space-y-3 max-h-[50%] overflow-auto scrollbar-thin">
+       </div>
+       <div id="admin-webinar-empty" class="hidden text-center py-12 text-gray-500">
+        <p class="text-lg mb-2">Belum ada webinar</p><button onclick="showAdminTab('add-webinar')" class="text-[#fbb03b] font-semibold hover:underline">+ Tambah Webinar Pertama</button>
+       </div>
+      </div><!-- Admin: Add/Edit Webinar -->
+      <div id="admin-add-webinar" class="p-6 hidden">
+       <form id="admin-webinar-form" class="space-y-5" onsubmit="handleAdminWebinarSubmit(event)"><input type="hidden" id="admin-webinar-edit-id" value="">
+        <div><label for="admin-webinar-name" class="block text-sm font-semibold text-[#1A365D] mb-2">Nama Webinar *</label> <input type="text" id="admin-webinar-name" required class="input-field" placeholder="Contoh: Tips Sukses Olimpiade Sains 2024">
+        </div>
+        <div><label for="admin-webinar-poster" class="block text-sm font-semibold text-[#1A365D] mb-2">URL Poster Webinar</label> <input type="text" id="admin-webinar-poster" class="input-field" placeholder="https://..." oninput="previewWebinarPoster(this.value)">
+         <p class="text-xs text-gray-400 mt-1">💡 Bisa pakai link Google Drive atau URL gambar langsung (opsional)</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+         <div><label for="admin-webinar-date" class="block text-sm font-semibold text-[#1A365D] mb-2">Tanggal Webinar *</label> <input type="date" id="admin-webinar-date" required class="input-field">
+         </div>
+         <div><label for="admin-webinar-time" class="block text-sm font-semibold text-[#1A365D] mb-2">Waktu Mulai *</label> <input type="time" id="admin-webinar-time" required class="input-field">
+         </div>
+        </div>
+        <div><label for="admin-webinar-speaker" class="block text-sm font-semibold text-[#1A365D] mb-2">Pembicara/Narasumber *</label> <input type="text" id="admin-webinar-speaker" required class="input-field" placeholder="Contoh: Prof. Dr. Ahmad, S.T., M.T.">
+        </div>
+        <div><label for="admin-webinar-description" class="block text-sm font-semibold text-[#1A365D] mb-2">Deskripsi <span class="text-gray-400 font-normal">(opsional)</span></label> <textarea id="admin-webinar-description" rows="3" class="input-field resize-none" placeholder="Jelaskan tentang webinar ini..."></textarea>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+         <div><label for="admin-webinar-link" class="block text-sm font-semibold text-[#1A365D] mb-2">Link Zoom/Meet *</label> <input type="url" id="admin-webinar-link" required class="input-field" placeholder="https://zoom.us/j/... atau https://meet.google.com/...">
+         </div>
+         <div><label class="block text-sm font-semibold text-[#1A365D] mb-2">Tipe Webinar *</label>
+          <div class="flex gap-4 mt-3"><label class="flex items-center gap-2 cursor-pointer"> <input type="radio" name="webinar-fee" id="admin-webinar-free" value="free" checked class="w-5 h-5 text-[#fbb03b]"> <span class="font-medium">Gratis</span> </label> <label class="flex items-center gap-2 cursor-pointer"> <input type="radio" name="webinar-fee" id="admin-webinar-paid" value="paid" class="w-5 h-5 text-[#fbb03b]"> <span class="font-medium">Berbayar</span> </label>
+          </div>
+         </div>
+        </div><label class="flex items-center gap-3 p-4 bg-amber-50 rounded-xl cursor-pointer hover:bg-amber-100 transition-colors"> <input type="checkbox" id="admin-webinar-featured" class="w-6 h-6 rounded-lg border-2 border-amber-300 text-amber-500 focus:ring-amber-500"> <span class="text-gray-700 font-medium">⭐ Tandai sebagai Featured</span> </label>
+        <div class="flex gap-4 pt-4"><button type="button" onclick="resetAdminWebinarForm()" class="flex-1 px-6 py-4 rounded-xl border-2 border-gray-200 text-gray-700 font-semibold hover:bg-gray-50 transition-colors"> Reset </button> <button type="submit" id="admin-webinar-submit-btn" class="flex-1 btn-primary px-6 py-4 rounded-xl text-[#1A365D] font-bold"> Simpan Webinar </button>
+        </div>
+       </form>
+      </div><!-- Admin: Insights List -->
+      <div id="admin-mentoring-list" class="p-6 hidden">
+       <div class="mb-6 flex items-center gap-3"><span class="text-gray-500">Total Sesi:</span><span id="admin-mentoring-count" class="bg-[#1A365D] text-white px-3 py-1 rounded-full text-sm font-bold">0</span>
+       </div>
+       <div id="admin-mentoring-items" class="space-y-3"></div>
+       <div id="admin-mentoring-empty" class="hidden text-center py-12 text-gray-500">
+        Belum ada sesi mentoring
+       </div>
+      </div>
+      <div id="admin-add-mentoring" class="p-6 hidden">
+       <form id="mentoring-form" class="space-y-5" onsubmit="handleMentoringSubmit(event)">
+        <div><label for="mentoring-topic" class="block text-sm font-semibold text-[#1A365D] mb-2">Judul / Topik Mentoring *</label><input id="mentoring-topic" required class="input-field" placeholder="Contoh: Strategi Menang OSN">
+        </div>
+        <div><label for="mentoring-mentor" class="block text-sm font-semibold text-[#1A365D] mb-2">Nama Lengkap Mentor *</label><input id="mentoring-mentor" required class="input-field" placeholder="Contoh: Ahmad Rizky Pratama">
+        </div>
+        <div><label for="mentoring-achievement" class="block text-sm font-semibold text-[#1A365D] mb-2">Prestasi Mentor *</label><input id="mentoring-achievement" required class="input-field" placeholder="Contoh: Peraih Medali Emas OSN 2024">
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+         <div><label for="mentoring-date" class="block text-sm font-semibold text-[#1A365D] mb-2">Tanggal *</label><input type="date" id="mentoring-date" required class="input-field">
+         </div>
+         <div><label for="mentoring-time" class="block text-sm font-semibold text-[#1A365D] mb-2">Jam *</label><input type="time" id="mentoring-time" required class="input-field">
+         </div>
+        </div>
+        <div><label for="mentoring-quota" class="block text-sm font-semibold text-[#1A365D] mb-2">Kuota Maksimal *</label><input type="number" min="1" id="mentoring-quota" required class="input-field" placeholder="30">
+        </div>
+        <div><label for="mentoring-link" class="block text-sm font-semibold text-[#1A365D] mb-2">Link Channel SCHOLAB *</label><input type="url" id="mentoring-link" required class="input-field" placeholder="https://...">
+         <p class="text-xs text-gray-400 mt-1">Info link Zoom akan dibagikan melalui channel SCHOLAB.</p>
+        </div>
+        <div class="flex gap-4"><button type="reset" class="flex-1 px-6 py-4 rounded-xl border-2 border-gray-200 font-semibold">Reset</button><button class="flex-1 btn-primary px-6 py-4 rounded-xl text-[#1A365D] font-bold">Simpan Mentoring</button>
+        </div>
+       </form>
+      </div>
+      <div id="admin-insights-list" class="p-6 hidden">
+       <div class="mb-6 flex items-center justify-between">
+        <div class="flex items-center gap-3"><span class="text-gray-500">Total Insight:</span> <span id="admin-insight-count" class="bg-[#fbb03b] text-[#1A365D] px-3 py-1 rounded-full text-sm font-bold">0</span>
+        </div>
+       </div>
+       <div id="admin-insights-grid" class="space-y-3 max-h-[50%] overflow-auto scrollbar-thin">
+       </div>
+       <div id="admin-insights-empty" class="hidden text-center py-12 text-gray-500">
+        <p class="text-lg mb-2">Belum ada insight</p><button onclick="showAdminTab('add-insight')" class="text-[#fbb03b] font-semibold hover:underline">+ Tambah Insight Pertama</button>
+       </div>
+      </div><!-- Admin: Add Insight -->
+      <div id="admin-add-insight" class="p-6 hidden">
+       <form id="insight-form" class="space-y-5" onsubmit="handleInsightSubmit(event)"><input type="hidden" id="insight-edit-id" value="">
+        <div><label for="insight-title" class="block text-sm font-semibold text-[#1A365D] mb-2">Judul Insight *</label> <input type="text" id="insight-title" required class="input-field" placeholder="Contoh: Tips Sukses Mengikuti Olimpiade Sains">
+        </div>
+        <div><label for="insight-category" class="block text-sm font-semibold text-[#1A365D] mb-2">Kategori *</label> <select id="insight-category" required class="input-field bg-white"> <option value="">Pilih kategori</option> <option value="Tips Belajar">📚 Tips Belajar</option> <option value="Persiapan Lomba">🎯 Persiapan Lomba</option> <option value="Motivasi">💪 Motivasi</option> <option value="Pengalaman">📝 Pengalaman</option> <option value="Lainnya">📌 Lainnya</option> </select>
+        </div>
+        <div><label for="insight-content" class="block text-sm font-semibold text-[#1A365D] mb-2">Konten *</label> <textarea id="insight-content" required rows="8" class="input-field resize-none" placeholder="Tulis tips dan trick di sini..."></textarea>
+        </div>
+        <div class="flex gap-4 pt-4"><button type="button" onclick="resetInsightForm()" class="flex-1 px-6 py-4 rounded-xl border-2 border-gray-200 text-gray-700 font-semibold hover:bg-gray-50 transition-colors"> Reset </button> <button type="submit" id="insight-submit-btn" class="flex-1 btn-primary px-6 py-4 rounded-xl text-[#1A365D] font-bold"> Simpan Insight </button>
+        </div>
+       </form>
+      </div><!-- Admin: Users List -->
+      <div id="admin-users-list" class="p-6 hidden"><!-- Stats Cards -->
+       <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+        <div class="bg-gradient-to-br from-green-500 to-green-600 rounded-2xl p-4 text-white">
+         <div class="flex items-center gap-3">
+          <div class="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center"><span class="text-xl">👥</span>
+          </div>
+          <div>
+           <p class="text-white/80 text-xs font-medium">Total User</p>
+           <p id="admin-user-count" class="text-2xl font-bold">0</p>
+          </div>
+         </div>
+        </div>
+        <div class="bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl p-4 text-white">
+         <div class="flex items-center gap-3">
+          <div class="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center"><span class="text-xl">📘</span>
+          </div>
+          <div>
+           <p class="text-white/80 text-xs font-medium">Siswa SMP</p>
+           <p id="admin-smp-count" class="text-2xl font-bold">0</p>
+          </div>
+         </div>
+        </div>
+        <div class="bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-2xl p-4 text-white">
+         <div class="flex items-center gap-3">
+          <div class="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center"><span class="text-xl">📗</span>
+          </div>
+          <div>
+           <p class="text-white/80 text-xs font-medium">Siswa SMA/Sederajat</p>
+           <p id="admin-sma-count" class="text-2xl font-bold">0</p>
+          </div>
+         </div>
+        </div>
+        <div class="bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl p-4 text-white">
+         <div class="flex items-center gap-3">
+          <div class="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center"><span class="text-xl">🎓</span>
+          </div>
+          <div>
+           <p class="text-white/80 text-xs font-medium">Mahasiswa</p>
+           <p id="admin-mhs-count" class="text-2xl font-bold">0</p>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="mb-4 flex items-center justify-between flex-wrap gap-4">
+        <p class="text-gray-500 text-sm">📊 Statistik berdasarkan nama sekolah/universitas</p><input type="text" id="admin-user-search" placeholder="Cari user..." class="input-field max-w-xs py-2.5" oninput="filterUserList(this.value)">
+       </div>
+       <div class="bg-gray-50 rounded-xl overflow-hidden">
+        <div class="grid grid-cols-12 gap-4 p-4 bg-[#1A365D] text-white font-semibold text-sm">
+         <div class="col-span-1">
+          #
+         </div>
+         <div class="col-span-4">
+          Nama Lengkap
+         </div>
+         <div class="col-span-4">
+          Asal Sekolah
+         </div>
+         <div class="col-span-2">
+          Jenjang
+         </div>
+         <div class="col-span-1">
+          Tgl
+         </div>
+        </div>
+        <div id="admin-users-grid" class="divide-y divide-gray-200 max-h-[40%] overflow-auto scrollbar-thin">
+        </div>
+       </div>
+       <div id="admin-users-empty" class="hidden text-center py-12 text-gray-500">
+        <p class="text-lg">Belum ada user terdaftar</p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div><!-- Toast -->
+   <div id="toast" class="toast hidden"><span id="toast-message" class="font-medium">Berhasil!</span>
+   </div>
+  </div>
+  <script>
+    const defaultConfig = {
+      hero_title: 'Temukan Lomba Impianmu!',
+      hero_subtitle: 'Jelajahi kompetisi akademik & non-akademik untuk pelajar dan mahasiswa se-Indonesia'
+    };
+
+    const ADMIN_PASSWORD = '150110';
+    
+    let currentUser = null;
+    let allData = [];
+    let competitions = [];
+    let webinars = [];
+    let mentoring = JSON.parse(localStorage.getItem('scholab_mentoring') || '[]');
+    let mentoringBookings = JSON.parse(localStorage.getItem('scholab_mentoring_bookings') || '[]');
+    let insights = [];
+    let users = [];
+    let userBookmarks = [];
+    let userWebinarBookmarks = [];
+    let filteredCompetitions = [];
+    let filteredWebinars = [];
+    let filters = { level: 'all', category: 'all', price: 'all', search: '' };
+    let isViewingBookmarks = false;
+    let isAdminLoggedIn = false;
+    let adminSearchQuery = '';
+    let adminWebinarSearchQuery = '';
+    let userSearchQuery = '';
+    let deleteConfirmId = null;
+    let webinarDeleteConfirmId = null;
+    let insightDeleteConfirmId = null;
+
+    const dataHandler = {
+      onDataChanged(data) {
+        allData = data;
+        competitions = data.filter(d => d.type === 'competition');
+        webinars = data.filter(d => d.type === 'webinar');
+        insights = data.filter(d => d.type === 'insight');
+        users = data.filter(d => d.type === 'user');
+        
+        // Auto-remove expired competitions
+        const today = new Date();
+        today.setHours(0, 0, 0, 0);
+        competitions = competitions.filter(c => {
+          const deadline = new Date(c.comp_deadline);
+          return deadline >= today;
+        });
+        
+        // Auto-remove expired webinars
+        webinars = webinars.filter(w => {
+          const webinarDate = new Date(w.webinar_date);
+          return webinarDate >= today;
+        });
+        
+        if (currentUser) {
+          userBookmarks = data.filter(d => d.type === 'bookmark' && d.user_id === currentUser.id);
+          userWebinarBookmarks = data.filter(d => d.type === 'webinar_bookmark' && d.user_id === currentUser.id);
+        }
+        
+        applyFilters();
+        updateBookmarkCount();
+        renderAdminList();
+        renderAdminWebinarList();
+        renderInsights();
+        renderAdminInsights();
+        renderUsersList();
+        
+        if (isViewingBookmarks) {
+          renderMyBookmarks();
+        }
+      }
+    };
+
+    async function handleAchievementSubmit(event) {
+      event.preventDefault();
+      if (!currentUser) return showToast('Silakan masuk terlebih dahulu');
+      const button = document.getElementById('achievement-submit-btn');
+      button.disabled = true; button.textContent = 'Mengirim...';
+      const result = await window.dataSdk.create({
+        type: 'achievement', user_id: currentUser.id, user_name: currentUser.name,
+        user_school: currentUser.school, user_school_type: currentUser.schoolType,
+        achievement_name: document.getElementById('achievement-name').value.trim(),
+        achievement_category: document.getElementById('achievement-category').value.trim(),
+        achievement_level: document.getElementById('achievement-level').value.trim(),
+        achievement_description: document.getElementById('achievement-description').value.trim(),
+        achievement_document_link: document.getElementById('achievement-document-link').value.trim(),
+        created_at: new Date().toISOString()
+      });
+      button.disabled = false; button.textContent = 'Kirim Prestasi 🏆';
+      if (result.isOk) { event.target.reset(); showToast('✅ Prestasi berhasil dilaporkan ke SCHOLAB!'); }
+      else showToast('Gagal mengirim laporan. Coba lagi.');
+    }
+
+    function renderAdminAchievements() {
+      const items = allData.filter(d => d.type === 'achievement');
+      const box = document.getElementById('admin-achievements-grid');
+      const empty = document.getElementById('admin-achievements-empty');
+      document.getElementById('admin-achievement-count').textContent = items.length;
+      empty.classList.toggle('hidden', items.length > 0);
+      box.innerHTML = items.map(a => `<article class="p-5 bg-gray-50 rounded-2xl border border-gray-100"><div class="flex items-start justify-between gap-4"><div><h4 class="font-heading font-bold text-[#1A365D]">${a.achievement_name}</h4><p class="text-sm text-gray-600 mt-1">${a.user_name} • ${a.user_school}</p><p class="text-sm text-gray-500 mt-2">${a.achievement_category} • ${a.achievement_level}</p><p class="text-sm text-gray-600 mt-3 whitespace-pre-line">${a.achievement_description}</p></div><a href="${a.achievement_document_link}" target="_blank" rel="noopener noreferrer" class="shrink-0 px-3 py-2 rounded-lg bg-[#1A365D] text-white text-xs font-bold">Buka Drive ↗</a></div></article>`).join('');
+    }
+
+    async function initApp() {
+      const dataResult = await window.dataSdk.init(dataHandler);
+      if (!dataResult.isOk) console.error('Data SDK init failed');
+
+      const savedUser = localStorage.getItem('scholab_user');
+      if (savedUser) {
+        currentUser = JSON.parse(savedUser);
+        showMainApp();
+      }
+
+      if (window.elementSdk) {
+        window.elementSdk.init({
+          defaultConfig,
+          onConfigChange: async (config) => {
+            const heroTitle = document.getElementById('hero-title');
+            const heroSubtitle = document.getElementById('hero-subtitle');
+            
+            if (heroTitle) {
+              const title = config.hero_title || defaultConfig.hero_title;
+              heroTitle.innerHTML = title.includes('Impianmu') 
+                ? title.replace('Impianmu!', '<span class="text-[#fbb03b]">Impianmu!</span>') 
+                : title;
+            }
+            if (heroSubtitle) heroSubtitle.textContent = config.hero_subtitle || defaultConfig.hero_subtitle;
+          },
+          mapToCapabilities: () => ({ recolorables: [], borderables: [], fontEditable: undefined, fontSizeable: undefined }),
+          mapToEditPanelValues: (config) => new Map([
+            ['hero_title', config.hero_title || defaultConfig.hero_title],
+            ['hero_subtitle', config.hero_subtitle || defaultConfig.hero_subtitle]
+          ])
+        });
+      }
+    }
+
+    async function handleLogin(event) {
+      event.preventDefault();
+      const name = document.getElementById('user-name').value.trim();
+      const schoolType = document.getElementById('user-school-type').value;
+      const school = document.getElementById('user-school').value.trim();
+      const errorEl = document.getElementById('school-error');
+      const loginBtn = document.getElementById('login-btn');
+      
+      if (!name || !schoolType || !school) {
+        errorEl.classList.add('hidden');
+        return;
+      }
+      
+      // Validate school name
+      const isValid = validateSchoolInput(schoolType, school);
+      if (!isValid) {
+        errorEl.classList.remove('hidden');
+        return;
+      }
+      
+      errorEl.classList.add('hidden');
+      loginBtn.disabled = true;
+      loginBtn.innerHTML = '<span class="animate-pulse">Memproses...</span>';
+      
+      const id = btoa(name.toLowerCase() + '|' + school.toLowerCase()).replace(/[^a-zA-Z0-9]/g, '');
+      
+      currentUser = { id, name, school, schoolType };
+      localStorage.setItem('scholab_user', JSON.stringify(currentUser));
+      
+      const existingUser = users.find(u => u.user_id === id);
+      if (!existingUser) {
+        await window.dataSdk.create({
+          type: 'user',
+          user_id: id,
+          user_name: name,
+          user_school: school,
+          user_school_type: schoolType,
+          created_at: new Date().toISOString()
+        });
+      }
+      
+      userBookmarks = allData.filter(d => d.type === 'bookmark' && d.user_id === currentUser.id);
+      userWebinarBookmarks = allData.filter(d => d.type === 'webinar_bookmark' && d.user_id === currentUser.id);
+      updateBookmarkCount();
+      
+      loginBtn.disabled = false;
+      loginBtn.textContent = 'Masuk ke SCHOLAB 🚀';
+      showMainApp();
+      showToast(`Selamat datang, ${name}! 👋`);
+    }
+
+    function validateSchoolInput(type, schoolName) {
+      const school = schoolName.toLowerCase();
+      
+      if (type === 'SMP') {
+        return school.includes('smp') || school.includes('mts') || school.includes('madrasah tsanawiyah') || 
+               school.includes('smpn') || school.includes('junior') || school.includes('middle');
+      }
+      
+      if (type === 'SMA') {
+        return school.includes('sma') || school.includes('smk') || school.includes('ma ') || school.includes('man ') ||
+               school.includes('madrasah aliyah') || school.includes('sman') || school.includes('smkn') ||
+               school.includes('senior') || school.includes('high school');
+      }
+      
+      if (type === 'Universitas') {
+        return school.includes('universitas') || school.includes('univ ') || school.includes('institut') || 
+               school.includes('politeknik') || school.includes('akademi') || school.includes('sekolah tinggi') ||
+               school.includes('stmik') || school.includes('stie') || school.includes('stikes') ||
+               school.includes('college') || school.includes('faculty') || school.includes('kampus');
+      }
+      
+      return false;
+    }
+
+    function validateSchoolName(input) {
+      const type = document.getElementById('user-school-type').value;
+      const errorEl = document.getElementById('school-error');
+      
+      if (!type) {
+        errorEl.classList.add('hidden');
+        return;
+      }
+      
+      const isValid = validateSchoolInput(type, input.value);
+      
+      if (input.value.trim() === '') {
+        errorEl.classList.add('hidden');
+      } else if (!isValid) {
+        errorEl.classList.remove('hidden');
+      } else {
+        errorEl.classList.add('hidden');
+      }
+    }
+
+    function handleLogout() {
+      currentUser = null;
+      userBookmarks = [];
+      localStorage.removeItem('scholab_user');
+      document.getElementById('page-login').classList.remove('hidden');
+      document.getElementById('page-main').classList.add('hidden');
+      document.getElementById('user-name').value = '';
+      document.getElementById('user-school').value = '';
+    }
+
+    function showMainApp() {
+      document.getElementById('page-login').classList.add('hidden');
+      document.getElementById('page-main').classList.remove('hidden');
+      
+      document.getElementById('display-user-name').textContent = currentUser.name;
+      document.getElementById('display-user-school').textContent = currentUser.school;
+      document.getElementById('user-avatar').textContent = currentUser.name.charAt(0).toUpperCase();
+      
+      applyFilters();
+      updateBookmarkCount();
+    }
+
+    function showMainTab(tab) {
+      const tabs = ['tab-competitions', 'tab-mentoring', 'tab-achievements'];
+      tabs.forEach(id => document.getElementById(id)?.classList.add('hidden'));
+      const buttons = [
+        document.getElementById('main-tab-comp'), document.getElementById('main-tab-mentoring'), document.getElementById('main-tab-achievements'),
+        document.getElementById('main-tab-comp-m'), document.getElementById('main-tab-mentoring-m'), document.getElementById('main-tab-achievements-m')
+      ];
+      buttons.forEach(btn => {
+        if (!btn) return;
+        btn.classList.remove('bg-white', 'text-[#1A365D]', 'shadow-sm');
+        btn.classList.add('text-gray-500');
+      });
+      const panelId = tab === 'mentoring' ? 'tab-mentoring' : tab === 'achievements' ? 'tab-achievements' : 'tab-competitions';
+      document.getElementById(panelId)?.classList.remove('hidden');
+      const activeIds = tab === 'mentoring' ? ['main-tab-mentoring', 'main-tab-mentoring-m'] : tab === 'achievements' ? ['main-tab-achievements', 'main-tab-achievements-m'] : ['main-tab-comp', 'main-tab-comp-m'];
+      activeIds.forEach(id => {
+        const btn = document.getElementById(id);
+        btn?.classList.add('bg-white', 'text-[#1A365D]', 'shadow-sm');
+        btn?.classList.remove('text-gray-500');
+      });
+      if (tab === 'mentoring') {
+        mentoring = mentoring.filter(m => new Date(`${m.date}T${m.time}`) >= new Date());
+        renderMentoring();
+      }
+    }
+
+    function selectLevel(level) {
+      if (filters.level === level) {
+        filters.level = 'all';
+      } else {
+        filters.level = level;
+      }
+      
+      document.getElementById('btn-smp').classList.toggle('active', filters.level === 'SMP');
+      document.getElementById('btn-sma').classList.toggle('active', filters.level === 'SMA/Sederajat');
+      document.getElementById('btn-mhs').classList.toggle('active', filters.level === 'Mahasiswa');
+      
+      updateSectionTitle();
+      applyFilters();
+    }
+
+    function filterCategory(cat) {
+      filters.category = cat;
+      applyFilters();
+    }
+
+    function filterPrice(price) {
+      filters.price = price;
+      applyFilters();
+    }
+
+    function handleSearch(value) {
+      filters.search = value.toLowerCase();
+      applyFilters();
+    }
+
+    function resetFilters() {
+      filters = { level: 'all', category: 'all', price: 'all', search: '' };
+      document.getElementById('search-input').value = '';
+      document.getElementById('btn-smp').classList.remove('active');
+      document.getElementById('btn-sma').classList.remove('active');
+      document.getElementById('btn-mhs').classList.remove('active');
+      document.getElementById('filter-category').value = 'all';
+      document.getElementById('filter-price').value = 'all';
+      updateSectionTitle();
+      applyFilters();
+    }
+
+    function updateSectionTitle() {
+      const titleEl = document.getElementById('section-title');
+      if (filters.level === 'all') {
+        titleEl.textContent = 'Semua Lomba';
+      } else {
+        titleEl.textContent = `Lomba ${filters.level}`;
+      }
+    }
+
+    function applyFilters() {
+      filteredCompetitions = competitions.filter(c => {
+        if (filters.level !== 'all') {
+          if (c.comp_level !== filters.level && c.comp_level !== 'Semua Jenjang') {
+            return false;
+          }
+        }
+        if (filters.category !== 'all' && c.comp_category !== filters.category) return false;
+        if (filters.price === 'free' && !c.comp_is_free) return false;
+        if (filters.price === 'paid' && c.comp_is_free) return false;
+        if (filters.search) {
+          const searchStr = (c.comp_name + ' ' + c.comp_description).toLowerCase();
+          if (!searchStr.includes(filters.search)) return false;
+        }
+        return true;
+      });
+      renderCompetitions();
+    }
+
+    function getDeadlineInfo(deadline) {
+      const today = new Date(); today.setHours(0, 0, 0, 0);
+      const dl = new Date(deadline);
+      const diff = Math.ceil((dl - today) / (1000 * 60 * 60 * 24));
+      
+      if (diff < 0) return { text: 'Ditutup', class: 'bg-gray-400 text-white', urgent: false };
+      if (diff === 0) return { text: '🔥 Hari Ini!', class: 'bg-red-500 text-white', urgent: true };
+      if (diff <= 3) return { text: `⚡ H-${diff}`, class: 'bg-red-500 text-white', urgent: true };
+      if (diff <= 7) return { text: `H-${diff}`, class: 'bg-orange-500 text-white', urgent: true };
+      return { text: formatDate(deadline), class: 'bg-[#1A365D] text-white', urgent: false };
+    }
+
+    function formatDate(d) {
+      return new Date(d).toLocaleDateString('id-ID', { day: 'numeric', month: 'short', year: 'numeric' });
+    }
+
+    function isBookmarked(compId) {
+      return userBookmarks.some(b => b.comp_id === compId);
+    }
+
+    function getLevelTagClass(level) {
+      if (level === 'Semua Jenjang') return 'tag-level-all';
+      if (level === 'SMP') return 'tag-level-smp';
+      if (level === 'SMA/Sederajat') return 'tag-level-sma';
+      return 'tag-level-mhs';
+    }
+
+    function getLevelDisplayText(level) {
+      if (level === 'Semua Jenjang') return '🎯 Semua Jenjang';
+      return level;
+    }
+
+    function getCategoryTagClass(cat) {
+      if (cat === 'Akademik') return 'tag-academic';
+      if (cat === 'Non-Akademik') return 'tag-nonacademic';
+      if (cat === 'Beasiswa') return 'tag-beasiswa';
+      return 'tag-volunteer';
+    }
+
+    function getCategoryIcon(cat) {
+      if (cat === 'Akademik') return '📚';
+      if (cat === 'Non-Akademik') return '🎨';
+      if (cat === 'Beasiswa') return '🎓';
+      return '🤝';
+    }
+
+    function createCompetitionCard(comp, idx) {
+      const dl = getDeadlineInfo(comp.comp_deadline);
+      const bookmarked = isBookmarked(comp.__backendId);
+      
+      const posterHtml = comp.comp_poster 
+        ? `<div class="bg-gray-100 rounded-t-2xl overflow-hidden">
+             <img src="${comp.comp_poster}" alt="${comp.comp_name}" class="w-full h-auto max-h-64 object-contain" onerror="this.parentElement.remove()">
+           </div>`
+        : '';
+      
+      return `
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover animate-fade-up" style="animation-delay: ${idx * 0.05}s">
+          ${posterHtml}
+          <div class="p-5">
+            <div class="flex items-start justify-between mb-3">
+              <div class="flex-1 min-w-0">
+                ${comp.comp_is_featured ? '<div class="inline-flex items-center gap-1 bg-gradient-to-r from-amber-400 to-orange-400 text-white text-xs font-bold px-3 py-1 rounded-full mb-2 shadow-sm">⭐ Featured</div>' : ''}
+                <h3 class="font-heading text-lg font-bold text-[#1A365D] line-clamp-2 cursor-pointer hover:text-[#fbb03b] transition-colors" onclick="showDetail('${comp.__backendId}')">${comp.comp_name}</h3>
+              </div>
+              <button onclick="toggleBookmark('${comp.__backendId}')" class="p-2 hover:bg-gray-100 rounded-xl transition-all ml-2 group flex-shrink-0">
+                <svg class="w-5 h-5 transition-all ${bookmarked ? 'text-[#fbb03b] fill-current scale-110' : 'text-gray-300 group-hover:text-[#fbb03b]'}" fill="${bookmarked ? 'currentColor' : 'none'}" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"/>
+                </svg>
+              </button>
+            </div>
+            
+            <div class="flex flex-wrap gap-1.5 mb-3">
+              <span class="tag text-[10px] sm:text-xs whitespace-nowrap ${getLevelTagClass(comp.comp_level)}">${getLevelDisplayText(comp.comp_level)}</span>
+              <span class="tag text-[10px] sm:text-xs whitespace-nowrap ${getCategoryTagClass(comp.comp_category)}">${getCategoryIcon(comp.comp_category)} ${comp.comp_category === 'Organisasi & Volunteer' ? 'Org' : comp.comp_category}</span>
+              <span class="tag text-[10px] sm:text-xs whitespace-nowrap ${comp.comp_is_free ? 'tag-free' : 'tag-paid'}">${comp.comp_is_free ? '🆓 Gratis' : '💎 Berbayar'}</span>
+            </div>
+            
+            <p class="text-gray-500 text-sm mb-4 line-clamp-2">${comp.comp_description}</p>
+            
+            <div class="flex items-center justify-between pt-3 border-t border-gray-100">
+              <span class="${dl.class} ${dl.urgent ? 'deadline-urgent' : ''} text-xs font-bold px-3 py-1.5 rounded-full">
+                ${dl.text}
+              </span>
+              <button onclick="showDetail('${comp.__backendId}')" class="text-[#1A365D] font-semibold text-sm hover:text-[#fbb03b] transition-colors flex items-center gap-1 group">
+                Detail
+                <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    function renderCompetitions() {
+      const container = document.getElementById('competitions-grid');
+      const emptyEl = document.getElementById('competitions-empty');
+      
+      if (filteredCompetitions.length === 0) {
+        container.innerHTML = '';
+        emptyEl.classList.remove('hidden');
+      } else {
+        container.innerHTML = filteredCompetitions.map((c, i) => createCompetitionCard(c, i)).join('');
+        emptyEl.classList.add('hidden');
+      }
+      
+      document.getElementById('competition-count').textContent = `${filteredCompetitions.length} lomba`;
+    }
+
+    function renderMentoring() {
+      const grid = document.getElementById('mentoring-grid'); const empty = document.getElementById('mentoring-empty');
+      mentoring = mentoring.filter(m => new Date(`${m.date}T${m.time}`) >= new Date());
+      localStorage.setItem('scholab_mentoring', JSON.stringify(mentoring));
+      if (!mentoring.length) { grid.innerHTML = ''; empty.classList.remove('hidden'); return; }
+      empty.classList.add('hidden');
+      grid.innerHTML = mentoring.map((m, i) => { const booked = mentoringBookings.some(b => b.sessionId === m.id && b.userId === currentUser?.id); const count = mentoringBookings.filter(b => b.sessionId === m.id).length; const full = count >= Number(m.quota); return `<article class="bg-white rounded-2xl shadow-lg p-6 card-hover animate-fade-up" style="animation-delay:${i * .05}s"><div class="flex items-center justify-between mb-4"><span class="tag bg-purple-100 text-purple-700">🎓 Mentoring</span><span class="tag ${full ? 'bg-red-100 text-red-700' : 'tag-free'}">${full ? 'Penuh' : 'Tersedia'}</span></div><h3 class="font-heading text-xl font-bold text-[#1A365D] mb-3">${m.topic}</h3><p class="text-[#1A365D] font-semibold mb-1">👤 ${m.mentor}</p><p class="text-gray-500 text-sm mb-2">🏅 ${m.achievement || 'Mentor berprestasi'}</p><p class="text-gray-500 text-sm mb-1">📅 ${formatDate(m.date)} • 🕐 ${m.time}</p><p class="text-gray-500 text-sm mb-5">👥 Kuota: ${count}/${m.quota} peserta</p><button ${full || booked ? 'disabled' : ''} onclick="bookMentoring('${m.id}')" class="w-full ${full || booked ? 'bg-gray-200 text-gray-500' : 'btn-primary text-[#1A365D]'} px-4 py-3 rounded-xl font-bold">${booked ? '✅ Sudah Terdaftar' : full ? 'Kuota Penuh' : 'Daftar / Booking Sesi Mentoring'}</button></article>`; }).join('');
+    }
+    function bookMentoring(id) { const m = mentoring.find(x => x.id === id); if (!m || !currentUser) return; const count = mentoringBookings.filter(b => b.sessionId === id).length; if (count >= Number(m.quota)) return showToast('⚠️ Kuota mentoring sudah penuh'); if (mentoringBookings.some(b => b.sessionId === id && b.userId === currentUser.id)) return showToast('Kamu sudah terdaftar di sesi ini'); mentoringBookings.push({ sessionId:id, userId:currentUser.id, userName:currentUser.name }); localStorage.setItem('scholab_mentoring_bookings', JSON.stringify(mentoringBookings)); renderMentoring(); showToast('✅ Booking mentoring berhasil!'); }
+    function handleMentoringSubmit(event) { event.preventDefault(); const m = { id: 'm-' + Date.now(), topic: document.getElementById('mentoring-topic').value.trim(), mentor: document.getElementById('mentoring-mentor').value.trim(), achievement: document.getElementById('mentoring-achievement').value.trim(), date: document.getElementById('mentoring-date').value, time: document.getElementById('mentoring-time').value, quota: Number(document.getElementById('mentoring-quota').value), link: document.getElementById('mentoring-link').value.trim() }; mentoring.push(m); localStorage.setItem('scholab_mentoring', JSON.stringify(mentoring)); event.target.reset(); renderAdminMentoring(); showAdminTab('mentoring'); showToast('✅ Sesi mentoring dipublikasikan!'); }
+    function renderAdminMentoring() { const box = document.getElementById('admin-mentoring-items'); const empty = document.getElementById('admin-mentoring-empty'); document.getElementById('admin-mentoring-count').textContent = mentoring.length; empty.classList.toggle('hidden', mentoring.length > 0); box.innerHTML = mentoring.map(m => `<div class="flex items-center justify-between gap-3 p-4 bg-gray-50 rounded-xl"><div><b class="text-[#1A365D]">${m.topic}</b><p class="text-sm text-gray-500">${m.mentor} • ${formatDate(m.date)} ${m.time} • Kuota ${m.quota}</p></div><button onclick="deleteMentoring('${m.id}')" class="px-3 py-2 bg-red-100 text-red-600 rounded-lg font-semibold">Hapus</button></div>`).join(''); }
+    function deleteMentoring(id) { mentoring = mentoring.filter(m => m.id !== id); mentoringBookings = mentoringBookings.filter(b => b.sessionId !== id); localStorage.setItem('scholab_mentoring', JSON.stringify(mentoring)); localStorage.setItem('scholab_mentoring_bookings', JSON.stringify(mentoringBookings)); renderAdminMentoring(); showToast('🗑️ Sesi mentoring dihapus'); }
+
+    function renderInsights() {
+      const container = document.getElementById('insights-list');
+      const emptyEl = document.getElementById('insights-empty');
+      
+      if (insights.length === 0) {
+        container.innerHTML = '';
+        emptyEl.classList.remove('hidden');
+      } else {
+        container.innerHTML = insights.map((insight, i) => `
+          <div class="insight-card rounded-2xl p-6 animate-fade-up" style="animation-delay: ${i * 0.1}s">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-[#fbb03b] rounded-xl flex items-center justify-center flex-shrink-0">
+                <span class="text-2xl">💡</span>
+              </div>
+              <div class="flex-1">
+                <span class="inline-block bg-[#1A365D] text-white text-xs font-semibold px-3 py-1 rounded-full mb-3">${insight.insight_category}</span>
+                <h3 class="font-heading text-xl font-bold text-[#1A365D] mb-3">${insight.insight_title}</h3>
+                <p class="text-gray-600 leading-relaxed whitespace-pre-line">${insight.insight_content}</p>
+              </div>
+            </div>
+          </div>
+        `).join('');
+        emptyEl.classList.add('hidden');
+      }
+    }
+
+    async function toggleBookmark(compId) {
+      if (!currentUser) return;
+      
+      const existingBookmark = userBookmarks.find(b => b.comp_id === compId);
+      
+      if (existingBookmark) {
+        const result = await window.dataSdk.delete(existingBookmark);
+        if (result.isOk) {
+          showToast('🗑️ Bookmark dihapus');
+        }
+      } else {
+        const comp = competitions.find(c => c.__backendId === compId);
+        if (!comp) return;
+        
+        if (userBookmarks.length >= 50) {
+          showToast('⚠️ Maksimal 50 bookmark!');
+          return;
+        }
+        
+        const bookmark = {
+          type: 'bookmark',
+          user_id: currentUser.id,
+          user_name: currentUser.name,
+          user_school: currentUser.school,
+          comp_id: compId,
+          created_at: new Date().toISOString()
+        };
+        
+        const result = await window.dataSdk.create(bookmark);
+        if (result.isOk) {
+          showToast('📌 Lomba disimpan!');
+        }
+      }
+    }
+
+    function updateBookmarkCount() {
+      const countEl = document.getElementById('my-bookmark-count');
+      const count = userBookmarks.length + userWebinarBookmarks.length;
+      if (count > 0) {
+        countEl.textContent = count;
+        countEl.classList.remove('hidden');
+      } else {
+        countEl.classList.add('hidden');
+      }
+    }
+
+    function renderWebinars() {
+      const container = document.getElementById('webinars-grid');
+      const emptyEl = document.getElementById('webinars-empty');
+      
+      if (webinars.length === 0) {
+        container.innerHTML = '';
+        emptyEl.classList.remove('hidden');
+      } else {
+        container.innerHTML = webinars.map((w, i) => createWebinarCard(w, i)).join('');
+        emptyEl.classList.add('hidden');
+      }
+      
+      document.getElementById('webinar-count').textContent = `${webinars.length} webinar`;
+    }
+
+    function createWebinarCard(webinar, idx) {
+      const bookmarked = userWebinarBookmarks.some(b => b.webinar_id === webinar.__backendId);
+      const webinarDate = new Date(webinar.webinar_date);
+      const today = new Date();
+      today.setHours(0, 0, 0, 0);
+      const isUpcoming = webinarDate > today;
+      
+      const posterHtml = webinar.webinar_poster 
+        ? `<div class="bg-gray-100 rounded-t-2xl overflow-hidden">
+             <img src="${webinar.webinar_poster}" alt="${webinar.webinar_name}" class="w-full h-auto max-h-64 object-contain" onerror="this.parentElement.remove()">
+           </div>`
+        : '';
+      
+      return `
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover animate-fade-up" style="animation-delay: ${idx * 0.05}s">
+          ${posterHtml}
+          <div class="p-5">
+            <div class="flex items-start justify-between mb-3">
+              <div class="flex-1 min-w-0">
+                ${webinar.webinar_is_featured ? '<div class="inline-flex items-center gap-1 bg-gradient-to-r from-amber-400 to-orange-400 text-white text-xs font-bold px-3 py-1 rounded-full mb-2 shadow-sm">⭐ Featured</div>' : ''}
+                <h3 class="font-heading text-lg font-bold text-[#1A365D] line-clamp-2 cursor-pointer hover:text-[#fbb03b] transition-colors" onclick="showWebinarDetail('${webinar.__backendId}')">${webinar.webinar_name}</h3>
+              </div>
+              <button onclick="toggleWebinarBookmark('${webinar.__backendId}')" class="p-2 hover:bg-gray-100 rounded-xl transition-all ml-2 group flex-shrink-0">
+                <svg class="w-5 h-5 transition-all ${bookmarked ? 'text-[#fbb03b] fill-current scale-110' : 'text-gray-300 group-hover:text-[#fbb03b]'}" fill="${bookmarked ? 'currentColor' : 'none'}" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"/>
+                </svg>
+              </button>
+            </div>
+            
+            <div class="mb-3">
+              <p class="text-sm font-medium text-[#1A365D] mb-1">👨‍🏫 ${webinar.webinar_speaker}</p>
+              <p class="text-xs text-gray-500">📅 ${formatDate(webinar.webinar_date)} • 🕐 ${webinar.webinar_time}</p>
+            </div>
+            
+            <div class="flex flex-wrap gap-1.5 mb-3">
+              <span class="tag text-[10px] sm:text-xs whitespace-nowrap ${webinar.webinar_is_free ? 'tag-free' : 'tag-paid'}">${webinar.webinar_is_free ? '🆓 Gratis' : '💎 Berbayar'}</span>
+              <span class="tag text-[10px] sm:text-xs whitespace-nowrap ${isUpcoming ? 'bg-green-100 text-green-700' : 'bg-gray-100 text-gray-700'}">${isUpcoming ? '🔴 Aktif' : '✓ Selesai'}</span>
+            </div>
+            
+            <p class="text-gray-500 text-sm mb-4 line-clamp-2">${webinar.webinar_description}</p>
+            
+            <button onclick="showWebinarDetail('${webinar.__backendId}')" class="w-full text-[#1A365D] font-semibold text-sm hover:text-[#fbb03b] transition-colors flex items-center justify-center gap-1 group pt-3 border-t border-gray-100">
+              Detail & Daftar
+              <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      `;
+    }
+
+    async function toggleWebinarBookmark(webinarId) {
+      if (!currentUser) return;
+      
+      const existingBookmark = userWebinarBookmarks.find(b => b.webinar_id === webinarId);
+      
+      if (existingBookmark) {
+        const result = await window.dataSdk.delete(existingBookmark);
+        if (result.isOk) {
+          showToast('🗑️ Webinar dihapus dari bookmark');
+        }
+      } else {
+        const webinar = webinars.find(w => w.__backendId === webinarId);
+        if (!webinar) return;
+        
+        if (userWebinarBookmarks.length >= 50) {
+          showToast('⚠️ Maksimal 50 webinar bookmark!');
+          return;
+        }
+        
+        const bookmark = {
+          type: 'webinar_bookmark',
+          user_id: currentUser.id,
+          user_name: currentUser.name,
+          user_school: currentUser.school,
+          webinar_id: webinarId,
+          created_at: new Date().toISOString()
+        };
+        
+        const result = await window.dataSdk.create(bookmark);
+        if (result.isOk) {
+          showToast('📌 Webinar disimpan!');
+        }
+      }
+    }
+
+    function showWebinarDetail(id) {
+      const webinar = webinars.find(w => w.__backendId === id);
+      if (!webinar) return;
+      
+      const bookmarked = userWebinarBookmarks.some(b => b.webinar_id === webinar.__backendId);
+      const webinarDate = new Date(webinar.webinar_date);
+      const today = new Date();
+      today.setHours(0, 0, 0, 0);
+      const isUpcoming = webinarDate > today;
+      
+      const posterHtml = webinar.webinar_poster 
+        ? `<div class="bg-gray-100 rounded-t-3xl overflow-hidden">
+             <img src="${webinar.webinar_poster}" alt="${webinar.webinar_name}" class="w-full h-auto max-h-80 object-contain mx-auto" onerror="this.parentElement.remove()">
+           </div>`
+        : '';
+      
+      document.getElementById('detail-content').innerHTML = `
+        ${posterHtml}
+        <div class="p-8">
+          <div class="flex items-start justify-between mb-6">
+            <div class="flex-1">
+              ${webinar.webinar_is_featured ? '<div class="inline-flex items-center gap-1 bg-gradient-to-r from-amber-400 to-orange-400 text-white text-sm font-bold px-4 py-1.5 rounded-full mb-4 shadow-sm">⭐ Featured</div>' : ''}
+              <h1 class="font-heading text-2xl md:text-3xl font-bold text-[#1A365D] mb-4">${webinar.webinar_name}</h1>
+              <div class="flex flex-wrap gap-1.5 sm:gap-2 items-center mb-4">
+                <span class="tag text-[10px] sm:text-xs whitespace-nowrap ${webinar.webinar_is_free ? 'tag-free' : 'tag-paid'}">${webinar.webinar_is_free ? '🆓 Gratis' : '💎 Berbayar'}</span>
+                <span class="tag text-[10px] sm:text-xs whitespace-nowrap ${isUpcoming ? 'bg-green-100 text-green-700' : 'bg-gray-100 text-gray-700'}">${isUpcoming ? '🔴 Aktif' : '✓ Selesai'}</span>
+              </div>
+            </div>
+            <button onclick="closeDetailModal()" class="p-2 hover:bg-gray-100 rounded-xl transition-colors">
+              <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+              </svg>
+            </button>
+          </div>
+          
+          <div class="bg-blue-50 border-2 border-blue-200 rounded-2xl p-5 mb-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+              <div>
+                <p class="text-xs text-blue-600 font-semibold">📅 Tanggal</p>
+                <p class="font-bold text-[#1A365D]">${formatDate(webinar.webinar_date)}</p>
+              </div>
+              <div>
+                <p class="text-xs text-blue-600 font-semibold">🕐 Waktu</p>
+                <p class="font-bold text-[#1A365D]">${webinar.webinar_time}</p>
+              </div>
+              <div class="col-span-2 md:col-span-2">
+                <p class="text-xs text-blue-600 font-semibold">👨‍🏫 Pembicara</p>
+                <p class="font-bold text-[#1A365D]">${webinar.webinar_speaker}</p>
+              </div>
+            </div>
+          </div>
+          
+          ${webinar.webinar_description ? `
+          <div class="bg-gray-50 rounded-2xl p-5 mb-6">
+            <h2 class="font-heading font-bold text-[#1A365D] mb-2">📋 Deskripsi</h2>
+            <p class="text-gray-600 leading-relaxed whitespace-pre-line">${webinar.webinar_description}</p>
+          </div>
+          ` : ''}
+          
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="${webinar.webinar_link}" target="_blank" rel="noopener noreferrer" class="btn-primary flex-1 px-8 py-4 rounded-2xl text-[#1A365D] font-bold text-lg text-center flex items-center justify-center gap-3">
+              Masuk Webinar
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+              </svg>
+            </a>
+            <button onclick="toggleWebinarBookmark('${webinar.__backendId}'); closeDetailModal();" class="px-8 py-4 rounded-2xl border-2 ${bookmarked ? 'border-[#fbb03b] bg-orange-50 text-[#1A365D]' : 'border-gray-200 text-gray-700'} font-bold text-lg flex items-center justify-center gap-3 hover:bg-gray-50 transition-colors">
+              <svg class="w-5 h-5 ${bookmarked ? 'fill-current text-[#fbb03b]' : ''}" fill="${bookmarked ? 'currentColor' : 'none'}" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"/>
+              </svg>
+              ${bookmarked ? 'Tersimpan' : 'Simpan'}
+            </button>
+          </div>
+        </div>
+      `;
+      
+      document.getElementById('detail-modal').classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function showMyBookmarks() {
+      isViewingBookmarks = true;
+      document.getElementById('competitions-section').classList.add('hidden');
+      document.getElementById('my-bookmarks-section').classList.remove('hidden');
+      renderMyBookmarks();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function hideMyBookmarks() {
+      isViewingBookmarks = false;
+      document.getElementById('competitions-section').classList.remove('hidden');
+      document.getElementById('my-bookmarks-section').classList.add('hidden');
+    }
+
+    function renderMyBookmarks() {
+      const container = document.getElementById('my-bookmarks-grid');
+      const emptyEl = document.getElementById('my-bookmarks-empty');
+      
+      const bookmarkedComps = userBookmarks.map(b => {
+        return competitions.find(c => c.__backendId === b.comp_id);
+      }).filter(Boolean);
+      
+      if (bookmarkedComps.length === 0) {
+        container.innerHTML = '';
+        emptyEl.classList.remove('hidden');
+      } else {
+        container.innerHTML = bookmarkedComps.map((c, i) => createCompetitionCard(c, i)).join('');
+        emptyEl.classList.add('hidden');
+      }
+    }
+
+    function showDetail(id) {
+      const comp = competitions.find(c => c.__backendId === id);
+      if (!comp) return;
+      
+      const dl = getDeadlineInfo(comp.comp_deadline);
+      const bookmarked = isBookmarked(comp.__backendId);
+      
+      const posterHtml = comp.comp_poster 
+        ? `<div class="bg-gray-100 rounded-t-3xl overflow-hidden">
+             <img src="${comp.comp_poster}" alt="${comp.comp_name}" class="w-full h-auto max-h-80 object-contain mx-auto" onerror="this.parentElement.remove()">
+           </div>`
+        : '';
+      
+      document.getElementById('detail-content').innerHTML = `
+        ${posterHtml}
+        <div class="p-8">
+          <div class="flex items-start justify-between mb-6">
+            <div class="flex-1">
+              ${comp.comp_is_featured ? '<div class="inline-flex items-center gap-1 bg-gradient-to-r from-amber-400 to-orange-400 text-white text-sm font-bold px-4 py-1.5 rounded-full mb-4 shadow-sm">⭐ Featured</div>' : ''}
+              <h1 class="font-heading text-2xl md:text-3xl font-bold text-[#1A365D] mb-4">${comp.comp_name}</h1>
+              <div class="flex flex-wrap gap-1.5 sm:gap-2">
+                <span class="tag text-[10px] sm:text-xs whitespace-nowrap ${getLevelTagClass(comp.comp_level)}">${getLevelDisplayText(comp.comp_level)}</span>
+                <span class="tag text-[10px] sm:text-xs whitespace-nowrap ${getCategoryTagClass(comp.comp_category)}">${getCategoryIcon(comp.comp_category)} ${comp.comp_category === 'Organisasi & Volunteer' ? 'Organisasi' : comp.comp_category}</span>
+                <span class="tag text-[10px] sm:text-xs whitespace-nowrap bg-gray-100 text-gray-700">${comp.comp_tier}</span>
+                <span class="tag text-[10px] sm:text-xs whitespace-nowrap ${comp.comp_is_free ? 'tag-free' : 'tag-paid'}">${comp.comp_is_free ? '🆓 Gratis' : '💎 Berbayar'}</span>
+              </div>
+            </div>
+            <button onclick="closeDetailModal()" class="p-2 hover:bg-gray-100 rounded-xl transition-colors">
+              <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+              </svg>
+            </button>
+          </div>
+          
+          <div class="${dl.urgent ? 'bg-red-50 border-red-200' : 'bg-amber-50 border-amber-200'} border-2 rounded-2xl p-5 mb-6 flex items-center gap-4">
+            <div class="${dl.class} ${dl.urgent ? 'deadline-urgent' : ''} font-bold px-5 py-3 rounded-xl text-lg">${dl.text}</div>
+            <div>
+              <div class="font-semibold text-[#1A365D]">Deadline Pendaftaran</div>
+              <div class="text-gray-600">${formatDate(comp.comp_deadline)}</div>
+            </div>
+          </div>
+          
+          <div class="space-y-5 mb-8">
+            ${comp.comp_description ? `
+            <div class="bg-gray-50 rounded-2xl p-5">
+              <h2 class="font-heading font-bold text-[#1A365D] mb-2">📋 Deskripsi</h2>
+              <p class="text-gray-600 leading-relaxed">${comp.comp_description}</p>
+            </div>
+            ` : ''}
+            
+            ${comp.comp_requirements ? `
+            <div class="bg-gray-50 rounded-2xl p-5">
+              <h2 class="font-heading font-bold text-[#1A365D] mb-2">✅ Syarat Peserta</h2>
+              <p class="text-gray-600 leading-relaxed">${comp.comp_requirements}</p>
+            </div>
+            ` : ''}
+            
+            ${comp.comp_prizes ? `
+            <div class="bg-gradient-to-r from-amber-50 to-yellow-50 rounded-2xl p-5 border-2 border-amber-200">
+              <h2 class="font-heading font-bold text-[#1A365D] mb-2">🏆 Hadiah</h2>
+              <p class="text-gray-700 font-medium">${comp.comp_prizes}</p>
+            </div>
+            ` : ''}
+          </div>
+          
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="${comp.comp_link}" target="_blank" rel="noopener noreferrer" class="btn-primary flex-1 px-8 py-4 rounded-2xl text-[#1A365D] font-bold text-lg text-center flex items-center justify-center gap-3">
+              Daftar Sekarang
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+              </svg>
+            </a>
+            ${comp.comp_guidebook ? `
+            <a href="${comp.comp_guidebook}" target="_blank" rel="noopener noreferrer" class="px-8 py-4 rounded-2xl border-2 border-[#1A365D] text-[#1A365D] font-bold text-lg flex items-center justify-center gap-3 hover:bg-[#1A365D] hover:text-white transition-colors">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+              </svg>
+              Guidebook
+            </a>
+            ` : ''}
+            <button onclick="toggleBookmark('${comp.__backendId}'); closeDetailModal();" class="px-8 py-4 rounded-2xl border-2 ${bookmarked ? 'border-[#fbb03b] bg-orange-50 text-[#1A365D]' : 'border-gray-200 text-gray-700'} font-bold text-lg flex items-center justify-center gap-3 hover:bg-gray-50 transition-colors">
+              <svg class="w-5 h-5 ${bookmarked ? 'fill-current text-[#fbb03b]' : ''}" fill="${bookmarked ? 'currentColor' : 'none'}" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"/>
+              </svg>
+              ${bookmarked ? 'Tersimpan' : 'Simpan'}
+            </button>
+          </div>
+        </div>
+      `;
+      
+      document.getElementById('detail-modal').classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeDetailModal() {
+      document.getElementById('detail-modal').classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+
+    function openAdminLogin() {
+      document.getElementById('admin-login-modal').classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+      document.getElementById('admin-password').value = '';
+      document.getElementById('admin-login-error').classList.add('hidden');
+    }
+
+    function closeAdminLogin() {
+      document.getElementById('admin-login-modal').classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+
+    function handleAdminLogin(event) {
+      event.preventDefault();
+      const password = document.getElementById('admin-password').value;
+      
+      if (password === ADMIN_PASSWORD) {
+        isAdminLoggedIn = true;
+        closeAdminLogin();
+        openAdminPanel();
+      } else {
+        document.getElementById('admin-login-error').classList.remove('hidden');
+        document.getElementById('admin-password').value = '';
+      }
+    }
+
+    function openAdminPanel() {
+      if (!isAdminLoggedIn) {
+        openAdminLogin();
+        return;
+      }
+      document.getElementById('admin-panel-modal').classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+      showAdminTab('competitions');
+    }
+
+    function closeAdminPanel() {
+      document.getElementById('admin-panel-modal').classList.add('hidden');
+      document.body.style.overflow = '';
+      resetAdminForm();
+      resetInsightForm();
+    }
+
+    function showAdminTab(tab) {
+      const panels = {
+        'competitions': 'admin-comp-list',
+        'add-comp': 'admin-add-comp',
+        'webinars': 'admin-webinar-list',
+        'add-webinar': 'admin-add-webinar',
+        'mentoring': 'admin-mentoring-list',
+        'add-mentoring': 'admin-add-mentoring',
+        'insights': 'admin-insights-list',
+        'add-insight': 'admin-add-insight',
+        'users': 'admin-users-list',
+        'achievements': 'admin-achievements-list'
+      };
+      
+      Object.values(panels).forEach(p => document.getElementById(p).classList.add('hidden'));
+      document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+      
+      document.getElementById(panels[tab]).classList.remove('hidden');
+      
+      const tabBtnMap = {
+        'competitions': 'admin-tab-comp',
+        'add-comp': 'admin-tab-add',
+        'webinars': 'admin-tab-webinar',
+        'add-webinar': 'admin-tab-add-webinar',
+        'mentoring': 'admin-tab-mentoring',
+        'add-mentoring': 'admin-tab-add-mentoring',
+        'insights': 'admin-tab-insights',
+        'add-insight': 'admin-tab-add-insight',
+        'users': 'admin-tab-users',
+        'achievements': 'admin-tab-achievements'
+      };
+      document.getElementById(tabBtnMap[tab]).classList.add('active');
+      
+      if (tab === 'competitions') renderAdminList();
+      if (tab === 'webinars') renderAdminWebinarList();
+      if (tab === 'mentoring') renderAdminMentoring();
+      if (tab === 'insights') renderAdminInsights();
+      if (tab === 'users') renderUsersList();
+      if (tab === 'achievements') renderAdminAchievements();
+    }
+
+    function filterAdminList(query) {
+      adminSearchQuery = query.toLowerCase();
+      renderAdminList();
+    }
+
+    function filterAdminWebinarList(query) {
+      adminWebinarSearchQuery = query.toLowerCase();
+      renderAdminWebinarList();
+    }
+
+    function renderAdminWebinarList() {
+      const container = document.getElementById('admin-webinars-list');
+      const emptyEl = document.getElementById('admin-webinar-empty');
+      
+      let filtered = webinars;
+      if (adminWebinarSearchQuery) {
+        filtered = webinars.filter(w => 
+          w.webinar_name.toLowerCase().includes(adminWebinarSearchQuery)
+        );
+      }
+      
+      document.getElementById('admin-webinar-count').textContent = webinars.length;
+      
+      if (filtered.length === 0) {
+        container.innerHTML = '';
+        emptyEl.classList.remove('hidden');
+        return;
+      }
+      
+      emptyEl.classList.add('hidden');
+      container.innerHTML = filtered.map(webinar => `
+        <div class="flex items-center gap-4 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors">
+          <div class="w-16 h-16 bg-gray-200 rounded-lg overflow-hidden flex-shrink-0">
+            ${webinar.webinar_poster 
+              ? `<img src="${webinar.webinar_poster}" alt="" class="w-full h-full object-cover" onerror="this.style.display='none'">`
+              : `<div class="w-full h-full flex items-center justify-center text-gray-400"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>`
+            }
+          </div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-2 mb-1">
+              ${webinar.webinar_is_featured ? '<span class="text-amber-500">⭐</span>' : ''}
+              <h4 class="font-semibold text-[#1A365D] truncate">${webinar.webinar_name}</h4>
+            </div>
+            <div class="flex flex-wrap gap-2 text-xs">
+              <span class="bg-blue-100 text-blue-700 px-2 py-1 rounded-full">👨‍🏫 ${webinar.webinar_speaker}</span>
+              <span class="bg-green-100 text-green-700 px-2 py-1 rounded-full">${formatDate(webinar.webinar_date)} ${webinar.webinar_time}</span>
+              <span class="${webinar.webinar_is_free ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'} px-2 py-1 rounded-full">${webinar.webinar_is_free ? 'Gratis' : 'Berbayar'}</span>
+            </div>
+          </div>
+          <div class="flex items-center gap-2">
+            <button onclick="editWebinar('${webinar.__backendId}')" class="p-2 bg-blue-100 hover:bg-blue-200 text-blue-600 rounded-lg transition-colors" title="Edit">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/>
+              </svg>
+            </button>
+            ${webinarDeleteConfirmId === webinar.__backendId ? `
+              <button onclick="confirmWebinarDelete('${webinar.__backendId}')" class="px-3 py-2 bg-red-500 hover:bg-red-600 text-white rounded-lg transition-colors text-xs font-bold">
+                Hapus?
+              </button>
+              <button onclick="cancelWebinarDelete()" class="px-3 py-2 bg-gray-200 hover:bg-gray-300 text-gray-600 rounded-lg transition-colors text-xs">
+                Batal
+              </button>
+            ` : `
+              <button onclick="requestWebinarDelete('${webinar.__backendId}')" class="p-2 bg-red-100 hover:bg-red-200 text-red-600 rounded-lg transition-colors" title="Hapus">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/>
+                </svg>
+              </button>
+            `}
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function renderAdminList() {
+      const container = document.getElementById('admin-competitions-list');
+      const emptyEl = document.getElementById('admin-list-empty');
+      
+      let filtered = competitions;
+      if (adminSearchQuery) {
+        filtered = competitions.filter(c => 
+          c.comp_name.toLowerCase().includes(adminSearchQuery)
+        );
+      }
+      
+      document.getElementById('admin-total-count').textContent = competitions.length;
+      
+      if (filtered.length === 0) {
+        container.innerHTML = '';
+        emptyEl.classList.remove('hidden');
+        return;
+      }
+      
+      emptyEl.classList.add('hidden');
+      container.innerHTML = filtered.map(comp => `
+        <div class="flex items-center gap-4 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors">
+          <div class="w-16 h-16 bg-gray-200 rounded-lg overflow-hidden flex-shrink-0">
+            ${comp.comp_poster 
+              ? `<img src="${comp.comp_poster}" alt="" class="w-full h-full object-cover" onerror="this.style.display='none'">`
+              : `<div class="w-full h-full flex items-center justify-center text-gray-400"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg></div>`
+            }
+          </div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-2 mb-1">
+              ${comp.comp_is_featured ? '<span class="text-amber-500">⭐</span>' : ''}
+              <h4 class="font-semibold text-[#1A365D] truncate">${comp.comp_name}</h4>
+            </div>
+            <div class="flex flex-wrap gap-2 text-xs">
+              <span class="${comp.comp_level === 'Semua Jenjang' ? 'bg-amber-100 text-amber-700' : 'bg-blue-100 text-blue-700'} px-2 py-1 rounded-full">${comp.comp_level === 'Semua Jenjang' ? '🎯 ' : ''}${comp.comp_level}</span>
+              <span class="bg-purple-100 text-purple-700 px-2 py-1 rounded-full">${comp.comp_category}</span>
+              <span class="${comp.comp_is_free ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'} px-2 py-1 rounded-full">${comp.comp_is_free ? 'Gratis' : 'Berbayar'}</span>
+              <span class="text-gray-500">${formatDate(comp.comp_deadline)}</span>
+            </div>
+          </div>
+          <div class="flex items-center gap-2">
+            <button onclick="editCompetition('${comp.__backendId}')" class="p-2 bg-blue-100 hover:bg-blue-200 text-blue-600 rounded-lg transition-colors" title="Edit">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/>
+              </svg>
+            </button>
+            ${deleteConfirmId === comp.__backendId ? `
+              <button onclick="confirmDelete('${comp.__backendId}')" class="px-3 py-2 bg-red-500 hover:bg-red-600 text-white rounded-lg transition-colors text-xs font-bold">
+                Hapus?
+              </button>
+              <button onclick="cancelDelete()" class="px-3 py-2 bg-gray-200 hover:bg-gray-300 text-gray-600 rounded-lg transition-colors text-xs">
+                Batal
+              </button>
+            ` : `
+              <button onclick="requestDelete('${comp.__backendId}')" class="p-2 bg-red-100 hover:bg-red-200 text-red-600 rounded-lg transition-colors" title="Hapus">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/>
+                </svg>
+              </button>
+            `}
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function renderAdminInsights() {
+      const container = document.getElementById('admin-insights-grid');
+      const emptyEl = document.getElementById('admin-insights-empty');
+      
+      document.getElementById('admin-insight-count').textContent = insights.length;
+      
+      if (insights.length === 0) {
+        container.innerHTML = '';
+        emptyEl.classList.remove('hidden');
+        return;
+      }
+      
+      emptyEl.classList.add('hidden');
+      container.innerHTML = insights.map(insight => `
+        <div class="flex items-center gap-4 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors">
+          <div class="w-12 h-12 bg-[#fbb03b] rounded-xl flex items-center justify-center flex-shrink-0">
+            <span class="text-xl">💡</span>
+          </div>
+          <div class="flex-1 min-w-0">
+            <span class="inline-block bg-[#1A365D] text-white text-xs font-semibold px-2 py-0.5 rounded-full mb-1">${insight.insight_category}</span>
+            <h4 class="font-semibold text-[#1A365D] truncate">${insight.insight_title}</h4>
+          </div>
+          <div class="flex items-center gap-2">
+            <button onclick="editInsight('${insight.__backendId}')" class="p-2 bg-blue-100 hover:bg-blue-200 text-blue-600 rounded-lg transition-colors" title="Edit">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/>
+              </svg>
+            </button>
+            ${insightDeleteConfirmId === insight.__backendId ? `
+              <button onclick="confirmInsightDelete('${insight.__backendId}')" class="px-3 py-2 bg-red-500 hover:bg-red-600 text-white rounded-lg transition-colors text-xs font-bold">
+                Hapus?
+              </button>
+              <button onclick="cancelInsightDelete()" class="px-3 py-2 bg-gray-200 hover:bg-gray-300 text-gray-600 rounded-lg transition-colors text-xs">
+                Batal
+              </button>
+            ` : `
+              <button onclick="requestInsightDelete('${insight.__backendId}')" class="p-2 bg-red-100 hover:bg-red-200 text-red-600 rounded-lg transition-colors" title="Hapus">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/>
+                </svg>
+              </button>
+            `}
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function detectUserLevel(schoolName) {
+      const school = schoolName.toLowerCase();
+      
+      if (school.includes('universitas') || school.includes('univ ') || school.includes('institut') || 
+          school.includes('politeknik') || school.includes('akademi') || school.includes('sekolah tinggi') ||
+          school.includes('stmik') || school.includes('stie') || school.includes('stikes') ||
+          school.includes('ui') || school.includes('ugm') || school.includes('itb') || school.includes('ipb') ||
+          school.includes('undip') || school.includes('unair') || school.includes('its') || school.includes('uny') ||
+          school.includes('unpad') || school.includes('uns') || school.includes('unj') || school.includes('um ') ||
+          school.includes('upi') || school.includes('unesa') || school.includes('unhas') || school.includes('unsri') ||
+          school.includes('fakultas') || school.includes('kampus') || school.includes('college')) {
+        return { level: 'Mahasiswa', color: 'bg-purple-100 text-purple-700', icon: '🎓' };
+      }
+      
+      if (school.includes('sma') || school.includes('smk') || school.includes('ma ') || school.includes('man ') ||
+          school.includes('madrasah aliyah') || school.includes('sman') || school.includes('smkn') ||
+          school.includes('senior high') || school.includes('high school')) {
+        return { level: 'SMA/Sederajat', color: 'bg-emerald-100 text-emerald-700', icon: '📗' };
+      }
+      
+      if (school.includes('smp') || school.includes('mts') || school.includes('madrasah tsanawiyah') ||
+          school.includes('smpn') || school.includes('junior high') || school.includes('middle school')) {
+        return { level: 'SMP', color: 'bg-blue-100 text-blue-700', icon: '📘' };
+      }
+      
+      return { level: 'Lainnya', color: 'bg-gray-100 text-gray-700', icon: '📋' };
+    }
+
+    function renderUsersList() {
+      const container = document.getElementById('admin-users-grid');
+      const emptyEl = document.getElementById('admin-users-empty');
+      
+      let smpCount = 0, smaCount = 0, mhsCount = 0;
+      users.forEach(u => {
+        const levelInfo = detectUserLevel(u.user_school);
+        if (levelInfo.level === 'SMP') smpCount++;
+        else if (levelInfo.level === 'SMA/Sederajat') smaCount++;
+        else if (levelInfo.level === 'Mahasiswa') mhsCount++;
+      });
+      
+      document.getElementById('admin-user-count').textContent = users.length;
+      document.getElementById('admin-smp-count').textContent = smpCount;
+      document.getElementById('admin-sma-count').textContent = smaCount;
+      document.getElementById('admin-mhs-count').textContent = mhsCount;
+      
+      let filtered = users;
+      if (userSearchQuery) {
+        filtered = users.filter(u => 
+          u.user_name.toLowerCase().includes(userSearchQuery) ||
+          u.user_school.toLowerCase().includes(userSearchQuery)
+        );
+      }
+      
+      if (filtered.length === 0) {
+        container.innerHTML = '';
+        emptyEl.classList.remove('hidden');
+        return;
+      }
+      
+      emptyEl.classList.add('hidden');
+      container.innerHTML = filtered.map((user, idx) => {
+        const levelInfo = detectUserLevel(user.user_school);
+        return `
+          <div class="grid grid-cols-12 gap-4 p-4 hover:bg-gray-100 transition-colors items-center text-sm">
+            <div class="col-span-1 text-gray-400 font-medium">${idx + 1}</div>
+            <div class="col-span-4 flex items-center gap-2">
+              <div class="w-8 h-8 bg-gradient-to-br from-[#1A365D] to-[#2D4A7C] rounded-lg flex items-center justify-center text-white font-bold text-xs flex-shrink-0">${user.user_name.charAt(0).toUpperCase()}</div>
+              <span class="font-medium text-[#1A365D] truncate">${user.user_name}</span>
+            </div>
+            <div class="col-span-4 text-gray-600 truncate">${user.user_school}</div>
+            <div class="col-span-2">
+              <span class="${levelInfo.color} text-xs font-semibold px-2 py-1 rounded-full">${levelInfo.icon} ${levelInfo.level}</span>
+            </div>
+            <div class="col-span-1 text-gray-400 text-xs">${new Date(user.created_at).toLocaleDateString('id-ID', { day: 'numeric', month: 'short' })}</div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function editWebinar(id) {
+      const webinar = webinars.find(w => w.__backendId === id);
+      if (!webinar) return;
+      
+      document.getElementById('admin-webinar-edit-id').value = id;
+      document.getElementById('admin-webinar-name').value = webinar.webinar_name;
+      document.getElementById('admin-webinar-poster').value = webinar.webinar_poster || '';
+      document.getElementById('admin-webinar-date').value = webinar.webinar_date;
+      document.getElementById('admin-webinar-time').value = webinar.webinar_time;
+      document.getElementById('admin-webinar-speaker').value = webinar.webinar_speaker;
+      document.getElementById('admin-webinar-description').value = webinar.webinar_description;
+      document.getElementById('admin-webinar-link').value = webinar.webinar_link;
+      document.getElementById('admin-webinar-free').checked = webinar.webinar_is_free;
+      document.getElementById('admin-webinar-paid').checked = !webinar.webinar_is_free;
+      document.getElementById('admin-webinar-featured').checked = webinar.webinar_is_featured;
+      
+      document.getElementById('admin-webinar-submit-btn').textContent = 'Update Webinar';
+      showAdminTab('add-webinar');
+    }
+
+    function requestWebinarDelete(id) {
+      webinarDeleteConfirmId = id;
+      renderAdminWebinarList();
+    }
+
+    function cancelWebinarDelete() {
+      webinarDeleteConfirmId = null;
+      renderAdminWebinarList();
+    }
+
+    async function confirmWebinarDelete(id) {
+      const webinar = webinars.find(w => w.__backendId === id);
+      if (!webinar) return;
+      
+      const result = await window.dataSdk.delete(webinar);
+      webinarDeleteConfirmId = null;
+      
+      if (result.isOk) {
+        showToast('🗑️ Webinar berhasil dihapus');
+      } else {
+        showToast('Gagal menghapus');
+      }
+    }
+
+    function resetAdminWebinarForm() {
+      document.getElementById('admin-webinar-form').reset();
+      document.getElementById('admin-webinar-edit-id').value = '';
+      document.getElementById('admin-webinar-free').checked = true;
+      document.getElementById('admin-webinar-submit-btn').textContent = 'Simpan Webinar';
+      webinarDeleteConfirmId = null;
+    }
+
+    async function handleAdminWebinarSubmit(event) {
+      event.preventDefault();
+      
+      const editId = document.getElementById('admin-webinar-edit-id').value;
+      const submitBtn = document.getElementById('admin-webinar-submit-btn');
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<span class="animate-pulse">Menyimpan...</span>';
+      
+      const isFree = document.getElementById('admin-webinar-free').checked;
+      
+      const posterInput = document.getElementById('admin-webinar-poster').value || '';
+      const convertedPoster = convertGoogleDriveLink(posterInput.trim());
+      
+      const webinarData = {
+        type: 'webinar',
+        webinar_name: document.getElementById('admin-webinar-name').value,
+        webinar_poster: convertedPoster,
+        webinar_date: document.getElementById('admin-webinar-date').value,
+        webinar_time: document.getElementById('admin-webinar-time').value,
+        webinar_speaker: document.getElementById('admin-webinar-speaker').value,
+        webinar_description: document.getElementById('admin-webinar-description').value || '',
+        webinar_link: document.getElementById('admin-webinar-link').value,
+        webinar_is_free: isFree,
+        webinar_is_featured: document.getElementById('admin-webinar-featured').checked,
+        created_at: new Date().toISOString()
+      };
+      
+      let result;
+      
+      if (editId) {
+        const existing = webinars.find(w => w.__backendId === editId);
+        if (existing) {
+          result = await window.dataSdk.update({ ...existing, ...webinarData });
+        }
+      } else {
+        if (webinars.length >= 999) {
+          showToast('⚠️ Batas maksimum 999 webinar tercapai');
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Simpan Webinar';
+          return;
+        }
+        result = await window.dataSdk.create(webinarData);
+      }
+      
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Simpan Webinar';
+      
+      if (result && result.isOk) {
+        showToast(editId ? '✅ Webinar diupdate!' : '✅ Webinar ditambahkan!');
+        resetAdminWebinarForm();
+        showAdminTab('webinars');
+      } else {
+        showToast('Gagal menyimpan');
+      }
+    }
+
+    function previewWebinarPoster(url) {
+      if (!url || url.trim() === '') return;
+      const convertedUrl = convertGoogleDriveLink(url.trim());
+      console.log('Preview URL:', convertedUrl);
+    }
+
+    function filterUserList(query) {
+      userSearchQuery = query.toLowerCase();
+      renderUsersList();
+    }
+
+    function editCompetition(id) {
+      const comp = competitions.find(c => c.__backendId === id);
+      if (!comp) return;
+      
+      document.getElementById('admin-edit-id').value = id;
+      document.getElementById('admin-comp-name').value = comp.comp_name;
+      document.getElementById('admin-comp-poster').value = comp.comp_poster || '';
+      document.getElementById('admin-comp-level').value = comp.comp_level;
+      document.getElementById('admin-comp-category').value = comp.comp_category;
+      document.getElementById('admin-comp-tier').value = comp.comp_tier;
+      document.getElementById('admin-comp-deadline').value = comp.comp_deadline;
+      document.getElementById('admin-comp-description').value = comp.comp_description;
+      document.getElementById('admin-comp-requirements').value = comp.comp_requirements;
+      document.getElementById('admin-comp-prizes').value = comp.comp_prizes || '';
+      document.getElementById('admin-comp-link').value = comp.comp_link;
+      document.getElementById('admin-comp-guidebook').value = comp.comp_guidebook || '';
+      document.getElementById('admin-comp-free').checked = comp.comp_is_free;
+      document.getElementById('admin-comp-paid').checked = !comp.comp_is_free;
+      document.getElementById('admin-comp-featured').checked = comp.comp_is_featured;
+      
+      document.getElementById('admin-submit-btn').textContent = 'Update Lomba';
+      showAdminTab('add-comp');
+    }
+
+    function editInsight(id) {
+      const insight = insights.find(i => i.__backendId === id);
+      if (!insight) return;
+      
+      document.getElementById('insight-edit-id').value = id;
+      document.getElementById('insight-title').value = insight.insight_title;
+      document.getElementById('insight-category').value = insight.insight_category;
+      document.getElementById('insight-content').value = insight.insight_content;
+      
+      document.getElementById('insight-submit-btn').textContent = 'Update Insight';
+      showAdminTab('add-insight');
+    }
+
+    function requestDelete(id) {
+      deleteConfirmId = id;
+      renderAdminList();
+    }
+
+    function cancelDelete() {
+      deleteConfirmId = null;
+      renderAdminList();
+    }
+
+    async function confirmDelete(id) {
+      const comp = competitions.find(c => c.__backendId === id);
+      if (!comp) return;
+      
+      const result = await window.dataSdk.delete(comp);
+      deleteConfirmId = null;
+      
+      if (result.isOk) {
+        showToast('🗑️ Lomba berhasil dihapus');
+      } else {
+        showToast('Gagal menghapus');
+      }
+    }
+
+    function requestInsightDelete(id) {
+      insightDeleteConfirmId = id;
+      renderAdminInsights();
+    }
+
+    function cancelInsightDelete() {
+      insightDeleteConfirmId = null;
+      renderAdminInsights();
+    }
+
+    async function confirmInsightDelete(id) {
+      const insight = insights.find(i => i.__backendId === id);
+      if (!insight) return;
+      
+      const result = await window.dataSdk.delete(insight);
+      insightDeleteConfirmId = null;
+      
+      if (result.isOk) {
+        showToast('🗑️ Insight berhasil dihapus');
+      } else {
+        showToast('Gagal menghapus');
+      }
+    }
+
+    function resetAdminForm() {
+      document.getElementById('admin-form').reset();
+      document.getElementById('admin-edit-id').value = '';
+      document.getElementById('admin-comp-free').checked = true;
+      document.getElementById('admin-submit-btn').textContent = 'Simpan Lomba';
+      document.getElementById('poster-preview-container').classList.add('hidden');
+      deleteConfirmId = null;
+    }
+
+    function resetInsightForm() {
+      document.getElementById('insight-form').reset();
+      document.getElementById('insight-edit-id').value = '';
+      document.getElementById('insight-submit-btn').textContent = 'Simpan Insight';
+      insightDeleteConfirmId = null;
+    }
+
+    async function handleAdminSubmit(event) {
+      event.preventDefault();
+      
+      const editId = document.getElementById('admin-edit-id').value;
+      const submitBtn = document.getElementById('admin-submit-btn');
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<span class="animate-pulse">Menyimpan...</span>';
+      
+      const isFree = document.getElementById('admin-comp-free').checked;
+      
+      const posterInput = document.getElementById('admin-comp-poster').value || '';
+      const convertedPoster = convertGoogleDriveLink(posterInput.trim());
+      
+      const compData = {
+        type: 'competition',
+        comp_name: document.getElementById('admin-comp-name').value,
+        comp_poster: convertedPoster,
+        comp_level: document.getElementById('admin-comp-level').value,
+        comp_category: document.getElementById('admin-comp-category').value,
+        comp_tier: document.getElementById('admin-comp-tier').value,
+        comp_deadline: document.getElementById('admin-comp-deadline').value,
+        comp_description: document.getElementById('admin-comp-description').value || '',
+        comp_requirements: document.getElementById('admin-comp-requirements').value || '',
+        comp_prizes: document.getElementById('admin-comp-prizes').value || '',
+        comp_link: document.getElementById('admin-comp-link').value,
+        comp_guidebook: document.getElementById('admin-comp-guidebook').value || '',
+        comp_is_free: isFree,
+        comp_is_featured: document.getElementById('admin-comp-featured').checked,
+        created_at: new Date().toISOString()
+      };
+      
+      let result;
+      
+      if (editId) {
+        const existing = competitions.find(c => c.__backendId === editId);
+        if (existing) {
+          result = await window.dataSdk.update({ ...existing, ...compData });
+        }
+      } else {
+        if (competitions.length >= 999) {
+          showToast('⚠️ Batas maksimum 999 lomba tercapai');
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Simpan Lomba';
+          return;
+        }
+        result = await window.dataSdk.create(compData);
+      }
+      
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Simpan Lomba';
+      
+      if (result && result.isOk) {
+        showToast(editId ? '✅ Lomba diupdate!' : '✅ Lomba ditambahkan!');
+        resetAdminForm();
+        showAdminTab('competitions');
+      } else {
+        showToast('Gagal menyimpan');
+      }
+    }
+
+    async function handleInsightSubmit(event) {
+      event.preventDefault();
+      
+      const editId = document.getElementById('insight-edit-id').value;
+      const submitBtn = document.getElementById('insight-submit-btn');
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<span class="animate-pulse">Menyimpan...</span>';
+      
+      const insightData = {
+        type: 'insight',
+        insight_title: document.getElementById('insight-title').value,
+        insight_category: document.getElementById('insight-category').value,
+        insight_content: document.getElementById('insight-content').value,
+        created_at: new Date().toISOString()
+      };
+      
+      let result;
+      
+      if (editId) {
+        const existing = insights.find(i => i.__backendId === editId);
+        if (existing) {
+          result = await window.dataSdk.update({ ...existing, ...insightData });
+        }
+      } else {
+        if (insights.length >= 100) {
+          showToast('⚠️ Batas maksimum 100 insight tercapai');
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Simpan Insight';
+          return;
+        }
+        result = await window.dataSdk.create(insightData);
+      }
+      
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Simpan Insight';
+      
+      if (result && result.isOk) {
+        showToast(editId ? '✅ Insight diupdate!' : '✅ Insight ditambahkan!');
+        resetInsightForm();
+        showAdminTab('insights');
+      } else {
+        showToast('Gagal menyimpan');
+      }
+    }
+
+    function showToast(message) {
+      const toast = document.getElementById('toast');
+      document.getElementById('toast-message').textContent = message;
+      toast.classList.remove('hidden');
+      setTimeout(() => toast.classList.add('hidden'), 3000);
+    }
+
+    function convertGoogleDriveLink(url) {
+      if (!url) return '';
+      
+      let match = url.match(/drive\.google\.com\/file\/d\/([a-zA-Z0-9_-]+)/);
+      if (match) {
+        return `https://lh3.googleusercontent.com/d/${match[1]}`;
+      }
+      
+      match = url.match(/drive\.google\.com\/open\?id=([a-zA-Z0-9_-]+)/);
+      if (match) {
+        return `https://lh3.googleusercontent.com/d/${match[1]}`;
+      }
+      
+      match = url.match(/drive\.google\.com\/uc\?.*id=([a-zA-Z0-9_-]+)/);
+      if (match) {
+        return `https://lh3.googleusercontent.com/d/${match[1]}`;
+      }
+      
+      if (url.includes('lh3.googleusercontent.com')) {
+        return url;
+      }
+      
+      return url;
+    }
+
+    function previewPoster(url) {
+      const container = document.getElementById('poster-preview-container');
+      const preview = document.getElementById('poster-preview');
+      const error = document.getElementById('poster-error');
+      
+      if (!url || url.trim() === '') {
+        container.classList.add('hidden');
+        return;
+      }
+      
+      const convertedUrl = convertGoogleDriveLink(url.trim());
+      
+      container.classList.remove('hidden');
+      error.classList.add('hidden');
+      preview.classList.remove('hidden');
+      preview.src = convertedUrl;
+    }
+
+    function handlePosterError() {
+      const preview = document.getElementById('poster-preview');
+      const error = document.getElementById('poster-error');
+      preview.classList.add('hidden');
+      error.classList.remove('hidden');
+    }
+
+    initApp();
+  </script>
+ </body>
+</html>
